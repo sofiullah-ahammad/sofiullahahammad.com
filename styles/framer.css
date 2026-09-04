@@ -343,7 +343,7 @@ nav.framer-hyPZS {
   }
 }
 
-/* Solid Straight Sharp Corners (0px) for Outer Section Backgrounds & Root Page Containers ONLY */
+/* Solid Straight Sharp Corners (0px) for Root Page Containers ONLY */
 html,
 body,
 #main,
@@ -352,11 +352,8 @@ section,
 footer,
 .framer-CBDtO,
 .framer-lkefcw,
-.framer-1saqg9t-container,
 .framer-1lldb4o-container,
-.framer-NTpaA,
 .framer-rcdnad,
-.framer-ufxx0n,
 .framer-n85nk4,
 div[data-layout-template="true"],
 div[data-framer-name="Header"],
@@ -368,6 +365,21 @@ div[data-framer-name="Projects"] {
   border-top-right-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
+}
+
+/* 4 Rounded Corners (40px Desktop / 24px Mobile) for Hero Section */
+.framer-1saqg9t-container,
+.framer-NTpaA,
+.framer-ufxx0n,
+section[data-framer-name="Desktop"],
+section[data-framer-name="Tablet-Light"],
+section[data-framer-name="Phone-light"] {
+  border-radius: 40px !important;
+  border-top-left-radius: 40px !important;
+  border-top-right-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+  overflow: hidden !important;
 }
 
 /* 4 Rounded Corners (40px Desktop / 24px Mobile) for Clients & Services Section Cards */
@@ -595,6 +607,9 @@ section[data-framer-name="clients"] {
     padding: 84px 0 !important;
   }
 
+  .framer-1saqg9t-container,
+  .framer-NTpaA,
+  .framer-ufxx0n,
   .framer-1drj0wv,
   .framer-1vqfxcs,
   .framer-ost3uh,
