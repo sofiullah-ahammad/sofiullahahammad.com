@@ -444,11 +444,32 @@ footer .framer-di44zm {
   padding: 0 0 12px !important;
 }
 
+/* Reduce excessive top and bottom empty space in Clients Section */
+.framer-1v8kwee,
+section[data-framer-name="clients"] {
+  height: auto !important;
+  max-height: none !important;
+}
+
+.framer-1drj0wv,
+.framer-muYVQ .framer-1drj0wv {
+  height: auto !important;
+  min-height: min-content !important;
+  max-height: none !important;
+  padding: 44px 0 !important;
+  gap: 24px !important;
+}
+
 @media (max-width: 809.98px) {
   .framer-qqKTu .framer-wa7e73,
   footer .framer-wa7e73 {
     border-top-left-radius: 24px !important;
     border-top-right-radius: 24px !important;
+  }
+
+  .framer-1drj0wv,
+  .framer-muYVQ .framer-1drj0wv {
+    padding: 32px 0 !important;
   }
 
   .framer-1drj0wv,
