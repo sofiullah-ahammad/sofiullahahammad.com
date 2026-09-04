@@ -1,10 +1,35 @@
 'use client';
 
 import { useEffect } from 'react';
+import Lenis from 'lenis';
 
 export default function FramerHydration() {
   useEffect(() => {
-    // 1. Set process env fallback if needed by Framer runtime
+    // 1. Initialize Lenis Smooth Scroll for silky smooth momentum scrolling
+    let lenis;
+    try {
+      lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
+        smoothWheel: true,
+        wheelMultiplier: 1.0,
+        touchMultiplier: 2.0,
+        infinite: false,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    } catch (e) {
+      console.warn('Lenis smooth scroll init warning:', e);
+    }
+
+    // 2. Set process env fallback if needed by Framer runtime
     if (typeof window !== 'undefined') {
       window.process = {
         ...window.process,
@@ -15,7 +40,7 @@ export default function FramerHydration() {
       };
     }
 
-    // 2. Preload runtime modules if not already present
+    // 3. Preload runtime modules if not already present
     const preloads = [
       '/js/rolldown-runtime.Dh6celcD.mjs',
       '/js/react.Di4Y5Kvy.mjs',
@@ -48,7 +73,7 @@ export default function FramerHydration() {
       }
     });
 
-    // 3. Append main script if not already added
+    // 4. Append main script if not already added
     const scriptSrc = '/js/script_main.BmKQoGIq.mjs';
     if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
       const script = document.createElement('script');
@@ -58,6 +83,12 @@ export default function FramerHydration() {
       script.setAttribute('data-framer-bundle', 'main');
       document.body.appendChild(script);
     }
+
+    return () => {
+      if (lenis) {
+        lenis.destroy();
+      }
+    };
   }, []);
 
   return null;
