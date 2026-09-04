@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
         <div className="framer-s3n7x7" data-framer-component-type="RichTextContainer">
           <p className="framer-text framer-styles-preset-d8lgz7" style={{ textAlign: 'center' }}>
-            ©2025 SOFIULLAH Studio. All right reserved.
+            ©2025 Sofiullah Ahammad. All rights reserved.
           </p>
         </div>
       </header>
