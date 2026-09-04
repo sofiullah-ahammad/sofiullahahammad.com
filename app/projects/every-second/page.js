@@ -1,3 +1,5 @@
+import ContactForm from '../../../components/ContactForm';
+
 export const metadata = {
   title: "Every Second - Magnetto",
   description: "Magnetto - Stylish Portfolio Template",

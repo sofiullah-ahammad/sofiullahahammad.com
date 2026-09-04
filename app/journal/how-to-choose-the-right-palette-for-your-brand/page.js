@@ -1,3 +1,5 @@
+import ContactForm from '../../../components/ContactForm';
+
 export const metadata = {
   title: "How to Choose the Right Palette - Magnetto",
   description: "Magnetto - Stylish Portfolio Template",

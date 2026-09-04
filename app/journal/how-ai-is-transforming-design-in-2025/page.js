@@ -1,3 +1,5 @@
+import ContactForm from '../../../components/ContactForm';
+
 export const metadata = {
   title: "How AI is Transforming Design in 2025 - Magnetto",
   description: "Magnetto - Stylish Portfolio Template",
