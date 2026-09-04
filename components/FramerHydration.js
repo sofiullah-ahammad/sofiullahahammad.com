@@ -73,16 +73,16 @@ export default function FramerHydration() {
       }
     });
 
-    // 4. Append main script if not already added (Disabled to preserve Next.js JSX section ordering)
-    // const scriptSrc = '/js/script_main.BmKQoGIq.mjs';
-    // if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
-    //   const script = document.createElement('script');
-    //   script.type = 'module';
-    //   script.async = true;
-    //   script.src = scriptSrc;
-    //   script.setAttribute('data-framer-bundle', 'main');
-    //   document.body.appendChild(script);
-    // }
+    // 4. Append main script if not already added
+    const scriptSrc = '/js/script_main.BmKQoGIq.mjs';
+    if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.async = true;
+      script.src = scriptSrc;
+      script.setAttribute('data-framer-bundle', 'main');
+      document.body.appendChild(script);
+    }
 
     return () => {
       if (lenis) {
