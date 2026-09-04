@@ -342,6 +342,17 @@ html {
   overscroll-behavior-y: none;
 }
 
+/* Hide broken 3D Canvas / Unicorn Studio empty white box placeholder */
+.framer-1xjpnxp-container,
+div[data-us-dpi],
+div[data-us-project] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  background: transparent !important;
+}
+
+
 
 
 
