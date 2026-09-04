@@ -223,32 +223,125 @@ html body { background: rgb(255, 255, 255); }
 
 
 
-/* Custom Overrides: Sleeker & Thinner Floating Navigation Bar */
-.framer-hyPZS.framer-dg5rc0 {
-  padding: 6px 12px !important;
-  gap: 12px !important;
-  border-radius: 26px !important;
+/* Custom Overrides: Floating Pill Navigation Bar (matching exact design from reference image) */
+.framer-1stg2t6-container {
+  top: 16px !important;
+  bottom: auto !important;
+  position: fixed !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 9999 !important;
+  width: auto !important;
+  max-width: 95vw !important;
+}
+
+/* Outer Translucent Glass Capsule */
+.framer-hyPZS.framer-dg5rc0,
+nav.framer-hyPZS {
+  background-color: rgba(120, 120, 128, 0.45) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 9999px !important;
+  padding: 4px 5px !important;
+  gap: 4px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Left Logo Box */
+.framer-hyPZS .framer-15de4dz {
+  background-color: #161616 !important;
+  border-radius: 14px !important;
+  padding: 0 14px !important;
+  height: 38px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .framer-hyPZS .framer-144o730 {
-  width: 140px !important;
-  height: 32px !important;
+  width: 90px !important;
+  height: 22px !important;
 }
+.framer-hyPZS .framer-144o730 img {
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Middle Navigation Tabs Capsule */
 .framer-hyPZS .framer-qtmte1 {
-  gap: 2px !important;
+  background-color: #161616 !important;
+  border-radius: 14px !important;
+  padding: 0 20px !important;
+  height: 38px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 20px !important;
   width: auto !important;
 }
+
+/* Tab Links & Text */
+.framer-hyPZS .framer-zMdzc .framer-jqf6y3 .framer-text,
+.framer-hyPZS .framer-qtmte1 .framer-text {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  text-transform: capitalize !important;
+  letter-spacing: -0.01em !important;
+}
+.framer-hyPZS .framer-qtmte1 a {
+  transition: opacity 0.2s ease !important;
+}
+.framer-hyPZS .framer-qtmte1 a:hover {
+  opacity: 0.75 !important;
+}
+
+/* Right White CTA Button */
+.framer-hyPZS .framer-1ub0dek-container,
 .framer-yJAKf.framer-v-5iwahy.framer-mmrlrr,
 .framer-yJAKf.framer-mmrlrr {
-  padding: 8px 16px !important;
-  border-radius: 16px !important;
+  background-color: #ffffff !important;
+  border-radius: 14px !important;
+  height: 38px !important;
+  padding: 0 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
-.framer-4ixzwx {
-  padding: 8px 14px !important;
+
+.framer-hyPZS .framer-1ub0dek-container .framer-text,
+.framer-yJAKf .framer-1iaov7i .framer-text {
+  font-family: 'Inter', sans-serif !important;
+  color: #000000 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  letter-spacing: -0.01em !important;
 }
-.framer-zMdzc .framer-jqf6y3 .framer-text {
-  font-size: 12px !important;
+
+@media (max-width: 809.98px) {
+  .framer-hyPZS .framer-15de4dz,
+  .framer-hyPZS .framer-qtmte1,
+  .framer-hyPZS .framer-1ub0dek-container {
+    height: 34px !important;
+  }
+  .framer-hyPZS .framer-qtmte1 {
+    padding: 0 12px !important;
+    gap: 12px !important;
+  }
+  .framer-hyPZS .framer-zMdzc .framer-jqf6y3 .framer-text,
+  .framer-hyPZS .framer-qtmte1 .framer-text,
+  .framer-hyPZS .framer-1ub0dek-container .framer-text {
+    font-size: 12px !important;
+  }
 }
-.framer-1stg2t6-container { top: 20px !important; bottom: auto !important; position: fixed !important; left: 50% !important; transform: translateX(-50%) !important; z-index: 9999 !important; }
 
 /* Solid Straight Sharp Corners (0px) for Outer Section Backgrounds & Root Page Containers ONLY */
 html,
