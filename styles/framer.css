@@ -250,16 +250,21 @@ html body { background: rgb(255, 255, 255); }
 }
 .framer-1stg2t6-container { top: 20px !important; bottom: auto !important; position: fixed !important; left: 50% !important; transform: translateX(-50%) !important; z-index: 9999 !important; }
 
-/* Custom Overrides: Completely Straight Sharp Corners (0px) for Card Containers */
+/* Custom Overrides: Completely Straight Sharp Corners (0px) for Section Containers */
 header,
 section,
 footer,
-div[data-framer-name],
+div[data-framer-name="Container"],
+div[data-framer-name="Header"],
+div[data-framer-name="Journal Hero"],
+div[data-framer-name="Services"],
+div[data-framer-name="Milestones"],
+div[data-framer-name="Journal"],
+div[data-framer-name="Projects"],
 .framer-n85nk4,
 .framer-rcdnad,
 .framer-1780gv1,
 .framer-wa7e73,
-.framer-1u1mxi0,
 .framer-CBDtO {
   border-radius: 0px !important;
   border-top-left-radius: 0px !important;
@@ -267,4 +272,28 @@ div[data-framer-name],
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
+
+/* Rounded Contact Card & Input Fields (Email/Firstname/Lastname/Phone/Submit) */
+.framer-1u1mxi0 {
+  border-radius: 46px !important;
+  border-top-left-radius: 46px !important;
+  border-top-right-radius: 46px !important;
+  border-bottom-left-radius: 46px !important;
+  border-bottom-right-radius: 46px !important;
+}
+
+.framer-form-input-wrapper,
+.framer-form-text-input,
+.framer-form-input-wrapper:after,
+.framer-mvnozm,
+.framer-r6t0i4,
+.framer-1en48rw,
+.framer-crtitr {
+  border-radius: 24px !important;
+  --framer-input-border-radius-top-left: 24px !important;
+  --framer-input-border-radius-top-right: 24px !important;
+  --framer-input-border-radius-bottom-left: 24px !important;
+  --framer-input-border-radius-bottom-right: 24px !important;
+}
+
 

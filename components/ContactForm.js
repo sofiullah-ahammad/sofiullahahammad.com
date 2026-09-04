@@ -69,6 +69,33 @@ export default function ContactForm() {
 
   const isEmailInvalid = emailTouched && email && !validateEmail(email);
 
+  const inputStyle = {
+    '--framer-input-border-bottom-width': '1px',
+    '--framer-input-border-color': 'var(--token-d559605d-d2a3-4776-a2c1-0436ceda3b18, rgba(255, 255, 255, 0.15))',
+    '--framer-input-border-left-width': '1px',
+    '--framer-input-border-radius-bottom-left': '24px',
+    '--framer-input-border-radius-bottom-right': '24px',
+    '--framer-input-border-radius-top-left': '24px',
+    '--framer-input-border-radius-top-right': '24px',
+    '--framer-input-border-right-width': '1px',
+    '--framer-input-border-style': 'solid',
+    '--framer-input-border-top-width': '1px',
+    '--framer-input-font-color': 'rgb(255, 255, 255)',
+    '--framer-input-icon-color': 'rgb(153, 153, 153)',
+    '--framer-input-placeholder-color': 'rgba(255, 255, 255, 0.6)',
+    backdropFilter: 'blur(5px)',
+    WebkitBackdropFilter: 'blur(5px)',
+    borderRadius: '24px'
+  };
+
+  const emailInputStyle = {
+    ...inputStyle,
+    '--framer-input-border-color': isEmailInvalid
+      ? '#ff4d4f'
+      : 'var(--token-d559605d-d2a3-4776-a2c1-0436ceda3b18, rgba(255, 255, 255, 0.15))',
+    borderColor: isEmailInvalid ? '#ff4d4f' : undefined
+  };
+
   return (
     <form className="framer-128ybiv" onSubmit={handleSubmit}>
       <div className="framer-zmoe9x">
@@ -93,23 +120,7 @@ export default function ContactForm() {
           </div>
           <div
             className="framer-form-text-input framer-form-input-wrapper framer-mvnozm framer-form-text-input-type"
-            style={{
-              '--framer-input-border-bottom-width': '1px',
-              '--framer-input-border-color': 'var(--token-d559605d-d2a3-4776-a2c1-0436ceda3b18, rgba(255, 255, 255, 0.15))',
-              '--framer-input-border-left-width': '1px',
-              '--framer-input-border-radius-bottom-left': '8px',
-              '--framer-input-border-radius-bottom-right': '8px',
-              '--framer-input-border-radius-top-left': '8px',
-              '--framer-input-border-radius-top-right': '8px',
-              '--framer-input-border-right-width': '1px',
-              '--framer-input-border-style': 'solid',
-              '--framer-input-border-top-width': '1px',
-              '--framer-input-font-color': 'rgb(255, 255, 255)',
-              '--framer-input-icon-color': 'rgb(153, 153, 153)',
-              '--framer-input-placeholder-color': 'rgba(255, 255, 255, 0.6)',
-              backdropFilter: 'blur(5px)',
-              WebkitBackdropFilter: 'blur(5px)'
-            }}
+            style={inputStyle}
           >
             <input
               type="text"
@@ -142,23 +153,7 @@ export default function ContactForm() {
           </div>
           <div
             className="framer-form-text-input framer-form-input-wrapper framer-r6t0i4 framer-form-text-input-type"
-            style={{
-              '--framer-input-border-bottom-width': '1px',
-              '--framer-input-border-color': 'var(--token-d559605d-d2a3-4776-a2c1-0436ceda3b18, rgba(255, 255, 255, 0.15))',
-              '--framer-input-border-left-width': '1px',
-              '--framer-input-border-radius-bottom-left': '8px',
-              '--framer-input-border-radius-bottom-right': '8px',
-              '--framer-input-border-radius-top-left': '8px',
-              '--framer-input-border-radius-top-right': '8px',
-              '--framer-input-border-right-width': '1px',
-              '--framer-input-border-style': 'solid',
-              '--framer-input-border-top-width': '1px',
-              '--framer-input-font-color': 'rgb(255, 255, 255)',
-              '--framer-input-icon-color': 'rgb(153, 153, 153)',
-              '--framer-input-placeholder-color': 'rgba(255, 255, 255, 0.6)',
-              backdropFilter: 'blur(5px)',
-              WebkitBackdropFilter: 'blur(5px)'
-            }}
+            style={inputStyle}
           >
             <input
               type="text"
@@ -193,26 +188,7 @@ export default function ContactForm() {
           </div>
           <div
             className="framer-form-text-input framer-form-input-wrapper framer-1en48rw"
-            style={{
-              '--framer-input-border-bottom-width': '1px',
-              '--framer-input-border-color': isEmailInvalid
-                ? '#ff4d4f'
-                : 'var(--token-d559605d-d2a3-4776-a2c1-0436ceda3b18, rgba(255, 255, 255, 0.15))',
-              '--framer-input-border-left-width': '1px',
-              '--framer-input-border-radius-bottom-left': '8px',
-              '--framer-input-border-radius-bottom-right': '8px',
-              '--framer-input-border-radius-top-left': '8px',
-              '--framer-input-border-radius-top-right': '8px',
-              '--framer-input-border-right-width': '1px',
-              '--framer-input-border-style': 'solid',
-              '--framer-input-border-top-width': '1px',
-              '--framer-input-font-color': 'rgb(255, 255, 255)',
-              '--framer-input-icon-color': 'rgb(153, 153, 153)',
-              '--framer-input-placeholder-color': 'rgba(255, 255, 255, 0.6)',
-              backdropFilter: 'blur(5px)',
-              WebkitBackdropFilter: 'blur(5px)',
-              borderColor: isEmailInvalid ? '#ff4d4f' : undefined
-            }}
+            style={emailInputStyle}
           >
             <input
               type="email"
@@ -250,23 +226,7 @@ export default function ContactForm() {
           </div>
           <div
             className="framer-form-text-input framer-form-input-wrapper framer-crtitr"
-            style={{
-              '--framer-input-border-bottom-width': '1px',
-              '--framer-input-border-color': 'var(--token-d559605d-d2a3-4776-a2c1-0436ceda3b18, rgba(255, 255, 255, 0.15))',
-              '--framer-input-border-left-width': '1px',
-              '--framer-input-border-radius-bottom-left': '8px',
-              '--framer-input-border-radius-bottom-right': '8px',
-              '--framer-input-border-radius-top-left': '8px',
-              '--framer-input-border-radius-top-right': '8px',
-              '--framer-input-border-right-width': '1px',
-              '--framer-input-border-style': 'solid',
-              '--framer-input-border-top-width': '1px',
-              '--framer-input-font-color': 'rgb(255, 255, 255)',
-              '--framer-input-icon-color': 'rgb(153, 153, 153)',
-              '--framer-input-placeholder-color': 'rgba(255, 255, 255, 0.6)',
-              backdropFilter: 'blur(5px)',
-              WebkitBackdropFilter: 'blur(5px)'
-            }}
+            style={inputStyle}
           >
             <input
               type="tel"
@@ -305,10 +265,11 @@ export default function ContactForm() {
             backgroundColor: 'var(--token-0760290c-0963-4afd-8b72-f7c94940d48f, rgb(255, 255, 255))',
             height: '100%',
             width: '100%',
-            borderBottomLeftRadius: '20px',
-            borderBottomRightRadius: '20px',
-            borderTopLeftRadius: '20px',
-            borderTopRightRadius: '20px',
+            borderBottomLeftRadius: '24px',
+            borderBottomRightRadius: '24px',
+            borderTopLeftRadius: '24px',
+            borderTopRightRadius: '24px',
+            borderRadius: '24px',
             opacity: '1',
             cursor: 'pointer'
           }}
