@@ -62,24 +62,12 @@ export default function Footer() {
                   ))}
                 </div>
               </div>
-              <div className="framer-1tpmwv">
-                <div className="framer-1q3znil" data-framer-component-type="RichTextContainer">
-                  <p className="framer-text framer-styles-preset-d8lgz7">Made with Love by</p>
-                </div>
-                <div className="framer-kz3nd3" data-framer-component-type="RichTextContainer">
-                  <p dir="auto" className="framer-text">
-                    <a className="framer-text framer-styles-preset-8g17pg" href="https://www.framer.com/@future-things/" target="_blank" rel="noopener noreferrer">
-                      FTC Studio
-                    </a>
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
         <div className="framer-s3n7x7" data-framer-component-type="RichTextContainer">
           <p className="framer-text framer-styles-preset-d8lgz7" style={{ textAlign: 'center' }}>
-            ©2025 Sofiullah Ahammad. All rights reserved.
+            ©2024 - 2026 ©2024 - 2026 Sofiullah Ahammad. All rights reserved.
           </p>
         </div>
       </header>
