@@ -553,7 +553,7 @@ footer .framer-di44zm {
   padding-bottom: 0px !important;
 }
 
-/* Clients Section: Outer black background starts flush right below 100vh Hero */
+/* Clients Section: Expanded vertical height with 4 rounded corners (top & bottom) */
 .framer-1v8kwee,
 .framer-muYVQ .framer-1v8kwee,
 section[data-framer-name="clients"] {
@@ -563,6 +563,12 @@ section[data-framer-name="clients"] {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
   background-color: #000 !important;
+  border-radius: 40px !important;
+  border-top-left-radius: 40px !important;
+  border-top-right-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+  overflow: hidden !important;
 }
 
 .framer-1drj0wv,
@@ -571,14 +577,22 @@ section[data-framer-name="clients"] {
   min-height: min-content !important;
   max-height: none !important;
   margin-top: 0px !important;
-  padding: 96px 0 !important;
-  gap: 40px !important;
+  padding: 130px 0 !important;
+  gap: 48px !important;
+  border-radius: 40px !important;
+  border-top-left-radius: 40px !important;
+  border-top-right-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+  overflow: hidden !important;
 }
 
 @media (max-width: 809.98px) {
+  .framer-1v8kwee,
+  .framer-muYVQ .framer-1v8kwee,
   .framer-1drj0wv,
   .framer-muYVQ .framer-1drj0wv {
-    padding: 64px 0 !important;
+    padding: 84px 0 !important;
   }
 
   .framer-1drj0wv,
