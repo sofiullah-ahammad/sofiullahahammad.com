@@ -249,3 +249,22 @@ html body { background: rgb(255, 255, 255); }
   font-size: 12px !important;
 }
 .framer-1stg2t6-container { top: 20px !important; bottom: auto !important; position: fixed !important; left: 50% !important; transform: translateX(-50%) !important; z-index: 9999 !important; }
+
+/* Custom Overrides: Completely Straight Sharp Corners (0px) for Card Containers */
+header,
+section,
+footer,
+div[data-framer-name],
+.framer-n85nk4,
+.framer-rcdnad,
+.framer-1780gv1,
+.framer-wa7e73,
+.framer-1u1mxi0,
+.framer-CBDtO {
+  border-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
