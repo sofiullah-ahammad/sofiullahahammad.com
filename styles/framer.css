@@ -248,7 +248,40 @@ html body { background: rgb(255, 255, 255); }
 .framer-zMdzc .framer-jqf6y3 .framer-text {
   font-size: 12px !important;
 }
-.framer-1stg2t6-container { top: 20px !important; bottom: auto !important; position: fixed !important; left: 50% !important; transform: translateX(-50%) !important; z-index: 9999 !important; }
+/* Sleek Floating Top Navigation Styling & Hover Fix */
+.framer-1stg2t6-container,
+.framer-hyPZS,
+.framer-dg5rc0,
+.framer-v-dg5rc0,
+nav[data-framer-name="Desktop"],
+nav[data-framer-name="Phone"],
+nav[data-framer-name="Navigation"] {
+  top: 20px !important;
+  bottom: auto !important;
+  position: fixed !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 9999 !important;
+  background-color: rgba(18, 18, 18, 0.75) !important;
+  background: rgba(18, 18, 18, 0.75) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Eliminate white background image wrapper on hover in navigation */
+.framer-1stg2t6-container [data-framer-background-image-wrapper="true"],
+.framer-hyPZS [data-framer-background-image-wrapper="true"],
+.framer-1wxzbpq,
+div[data-framer-name="Explore"],
+#template-overlay {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  background: transparent !important;
+}
+
 
 /* Custom Overrides: Completely Straight Sharp Corners (0px) for Section Containers */
 header,
