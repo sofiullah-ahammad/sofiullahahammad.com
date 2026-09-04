@@ -537,11 +537,29 @@ footer .framer-di44zm {
   padding: 0 0 12px !important;
 }
 
-/* Reduce excessive top and bottom empty space in Clients Section */
+/* Reduce excessive top and bottom empty space in Clients Section & Flush with Hero */
+.framer-1saqg9t-container,
+.framer-muYVQ .framer-1saqg9t-container {
+  height: auto !important;
+  max-height: none !important;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.framer-NTpaA .framer-ufxx0n,
+.framer-NTpaA {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
 .framer-1v8kwee,
+.framer-muYVQ .framer-1v8kwee,
 section[data-framer-name="clients"] {
   height: auto !important;
   max-height: none !important;
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+  padding-bottom: 8px !important;
 }
 
 .framer-1drj0wv,
@@ -549,6 +567,7 @@ section[data-framer-name="clients"] {
   height: auto !important;
   min-height: min-content !important;
   max-height: none !important;
+  margin-top: 0px !important;
   padding: 44px 0 !important;
   gap: 24px !important;
 }
