@@ -378,10 +378,13 @@ html {
   overscroll-behavior-y: none;
 }
 
-/* Completely remove Journal section from Home Page */
+/* Completely remove Journal section and Journal nav links from Home Page & Footer */
 .framer-CBDtO .framer-1us5k9m-container,
 .framer-mpn1O > section[data-framer-name="Journal"],
 .framer-mpn1O > div[data-framer-name="Journal"],
+.framer-bbb8sy-container,
+.framer-1wlqauu-container,
+[data-framer-name="Journal"],
 .framer-53vcm {
   display: none !important;
   height: 0px !important;
