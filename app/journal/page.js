@@ -1,8 +1,16 @@
 import ContactForm from '../../components/ContactForm';
 
 export const metadata = {
-  title: "Journal - Sofiullah Ahammad",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "Design Journal & Industry Insights | Sofiullah Ahammad",
+  description: "Read design insights, AI trends, brand identity strategy, and creative articles authored by Sofiullah Ahammad.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com/journal",
+  },
+  openGraph: {
+    title: "Design Journal & Industry Insights | Sofiullah Ahammad",
+    description: "Read design insights, AI trends, brand identity strategy, and creative articles authored by Sofiullah Ahammad.",
+    url: "https://sofiullahahammad.com/journal",
+  },
 };
 
 export default function Page() {

@@ -1,8 +1,16 @@
 import ContactForm from '../../../components/ContactForm';
 
 export const metadata = {
-  title: "How AI is Transforming Design in 2025 - Sofiullah Ahammad",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "How AI is Transforming Design in 2025 | Sofiullah Ahammad",
+  description: "An in-depth analysis on how Artificial Intelligence is shaping design in 2025 by Sofiullah Ahammad.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com/journal/how-ai-is-transforming-design-in-2025",
+  },
+  openGraph: {
+    title: "How AI is Transforming Design in 2025 | Sofiullah Ahammad",
+    description: "An in-depth analysis on how Artificial Intelligence is shaping design in 2025 by Sofiullah Ahammad.",
+    url: "https://sofiullahahammad.com/journal/how-ai-is-transforming-design-in-2025",
+  },
 };
 
 export default function Page() {

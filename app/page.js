@@ -1,8 +1,16 @@
 import ContactForm from '../components/ContactForm';
 
 export const metadata = {
-  title: "Sofiullah Ahammad - Personal Portfolio",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "Sofiullah Ahammad | Brand Identity Designer Bangladesh",
+  description: "Official portfolio of Sofiullah Ahammad, a leading Brand Identity Designer & Strategist from Bangladesh crafting iconic brand identities and visual experiences.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com",
+  },
+  openGraph: {
+    title: "Sofiullah Ahammad | Brand Identity Designer Bangladesh",
+    description: "Official portfolio of Sofiullah Ahammad, a leading Brand Identity Designer & Strategist from Bangladesh crafting iconic brand identities and visual experiences.",
+    url: "https://sofiullahahammad.com",
+  },
 };
 
 export default function Page() {

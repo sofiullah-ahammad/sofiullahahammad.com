@@ -1,8 +1,16 @@
 import ContactForm from '../../../components/ContactForm';
 
 export const metadata = {
-  title: "10 Web Design Trends - Sofiullah Ahammad",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "10 Web Design Trends That Will Dominate This Year | Sofiullah Ahammad",
+  description: "Discover top 10 web design trends dominating the industry, curated by Sofiullah Ahammad.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com/journal/10-web-design-trends-that-will-dominate-this-year",
+  },
+  openGraph: {
+    title: "10 Web Design Trends That Will Dominate This Year | Sofiullah Ahammad",
+    description: "Discover top 10 web design trends dominating the industry, curated by Sofiullah Ahammad.",
+    url: "https://sofiullahahammad.com/journal/10-web-design-trends-that-will-dominate-this-year",
+  },
 };
 
 export default function Page() {

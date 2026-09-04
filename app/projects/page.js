@@ -1,8 +1,16 @@
 import ContactForm from '../../components/ContactForm';
 
 export const metadata = {
-  title: "Projects - Sofiullah Ahammad",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "Brand Design Projects & Case Studies | Sofiullah Ahammad",
+  description: "Explore brand identity projects, logo designs, and visual branding case studies crafted by Sofiullah Ahammad.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com/projects",
+  },
+  openGraph: {
+    title: "Brand Design Projects & Case Studies | Sofiullah Ahammad",
+    description: "Explore brand identity projects, logo designs, and visual branding case studies crafted by Sofiullah Ahammad.",
+    url: "https://sofiullahahammad.com/projects",
+  },
 };
 
 export default function Page() {

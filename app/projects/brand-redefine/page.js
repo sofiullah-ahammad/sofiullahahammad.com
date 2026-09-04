@@ -1,8 +1,16 @@
 import ContactForm from '../../../components/ContactForm';
 
 export const metadata = {
-  title: "Brand Redefine - Sofiullah Ahammad",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "Brand Redefine - Visual Branding Project | Sofiullah Ahammad",
+  description: "Discover how Sofiullah Ahammad redefined visual brand identity in this detailed case study.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com/projects/brand-redefine",
+  },
+  openGraph: {
+    title: "Brand Redefine - Visual Branding Project | Sofiullah Ahammad",
+    description: "Discover how Sofiullah Ahammad redefined visual brand identity in this detailed case study.",
+    url: "https://sofiullahahammad.com/projects/brand-redefine",
+  },
 };
 
 export default function Page() {

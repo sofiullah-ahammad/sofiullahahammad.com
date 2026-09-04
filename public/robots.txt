@@ -1,0 +1,5 @@
+# Robots.txt for Sofiullah Ahammad Portfolio (sofiullahahammad.com)
+User-agent: *
+Allow: /
+
+Sitemap: https://sofiullahahammad.com/sitemap.xml

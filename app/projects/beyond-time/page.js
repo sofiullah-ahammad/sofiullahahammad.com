@@ -1,8 +1,16 @@
 import ContactForm from '../../../components/ContactForm';
 
 export const metadata = {
-  title: "Beyond Time - Sofiullah Ahammad",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "Beyond Time - Brand Identity Case Study | Sofiullah Ahammad",
+  description: "Explore the Beyond Time brand identity case study designed by Sofiullah Ahammad.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com/projects/beyond-time",
+  },
+  openGraph: {
+    title: "Beyond Time - Brand Identity Case Study | Sofiullah Ahammad",
+    description: "Explore the Beyond Time brand identity case study designed by Sofiullah Ahammad.",
+    url: "https://sofiullahahammad.com/projects/beyond-time",
+  },
 };
 
 export default function Page() {

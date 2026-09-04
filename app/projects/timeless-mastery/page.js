@@ -1,8 +1,16 @@
 import ContactForm from '../../../components/ContactForm';
 
 export const metadata = {
-  title: "Timeless Mastery - Sofiullah Ahammad",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "Timeless Mastery - Brand Design Project | Sofiullah Ahammad",
+  description: "Timeless Mastery brand design and strategy portfolio piece by Sofiullah Ahammad.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com/projects/timeless-mastery",
+  },
+  openGraph: {
+    title: "Timeless Mastery - Brand Design Project | Sofiullah Ahammad",
+    description: "Timeless Mastery brand design and strategy portfolio piece by Sofiullah Ahammad.",
+    url: "https://sofiullahahammad.com/projects/timeless-mastery",
+  },
 };
 
 export default function Page() {

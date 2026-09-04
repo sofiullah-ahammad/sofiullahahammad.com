@@ -1,8 +1,16 @@
 import ContactForm from '../../../components/ContactForm';
 
 export const metadata = {
-  title: "How to Choose the Right Palette - Sofiullah Ahammad",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "How to Choose the Right Palette for Your Brand | Sofiullah Ahammad",
+  description: "A comprehensive guide to brand color psychology and palette selection by Sofiullah Ahammad.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com/journal/how-to-choose-the-right-palette-for-your-brand",
+  },
+  openGraph: {
+    title: "How to Choose the Right Palette for Your Brand | Sofiullah Ahammad",
+    description: "A comprehensive guide to brand color psychology and palette selection by Sofiullah Ahammad.",
+    url: "https://sofiullahahammad.com/journal/how-to-choose-the-right-palette-for-your-brand",
+  },
 };
 
 export default function Page() {

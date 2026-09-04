@@ -1,8 +1,16 @@
 import ContactForm from '../../../components/ContactForm';
 
 export const metadata = {
-  title: "Every Second - Sofiullah Ahammad",
-  description: "Sofiullah Ahammad - Personal Portfolio",
+  title: "Every Second - Brand Experience Case Study | Sofiullah Ahammad",
+  description: "Detailed design case study of Every Second brand strategy and visual identity by Sofiullah Ahammad.",
+  alternates: {
+    canonical: "https://sofiullahahammad.com/projects/every-second",
+  },
+  openGraph: {
+    title: "Every Second - Brand Experience Case Study | Sofiullah Ahammad",
+    description: "Detailed design case study of Every Second brand strategy and visual identity by Sofiullah Ahammad.",
+    url: "https://sofiullahahammad.com/projects/every-second",
+  },
 };
 
 export default function Page() {
