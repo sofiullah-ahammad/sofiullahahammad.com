@@ -397,11 +397,28 @@ html {
   pointer-events: none !important;
 }
 
-/* Reduce excessive top and bottom padding in Footer & Round Top Corners */
+/* Ensure dark background for container elements so no white gap peeks through */
+.framer-CBDtO.framer-lkefcw,
+.framer-muYVQ.framer-72rtr7 {
+  background-color: #000 !important;
+}
+
+/* Outer Footer section: full-width solid black box with straight edges */
+.framer-1c3xyrz-container,
+footer,
+.framer-qqKTu {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  border-radius: 0px !important;
+  background-color: #000 !important;
+}
+
+/* Inner Footer Card: dark grey background with rounded top corners */
 .framer-qqKTu .framer-wa7e73,
 footer .framer-wa7e73 {
   padding: 24px 44px 32px !important;
   gap: 24px !important;
+  background-color: var(--token-a099af4a-6aec-40a3-976c-256397b32f03, #161616) !important;
   border-top-left-radius: 40px !important;
   border-top-right-radius: 40px !important;
   border-bottom-left-radius: 0px !important;
@@ -419,24 +436,9 @@ footer .framer-di44zm {
   padding: 0 0 12px !important;
 }
 
-.framer-1c3xyrz-container,
-footer,
-.framer-qqKTu {
-  margin-bottom: 0px !important;
-  padding-bottom: 0px !important;
-  border-top-left-radius: 40px !important;
-  border-top-right-radius: 40px !important;
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-  overflow: hidden !important;
-}
-
 @media (max-width: 809.98px) {
   .framer-qqKTu .framer-wa7e73,
-  footer .framer-wa7e73,
-  footer,
-  .framer-qqKTu,
-  .framer-1c3xyrz-container {
+  footer .framer-wa7e73 {
     border-top-left-radius: 24px !important;
     border-top-right-radius: 24px !important;
   }
