@@ -20,7 +20,7 @@ export default function ContactForm() {
     if (email && !validateEmail(email)) {
       setStatus({
         type: 'error',
-        message: '⚠️ Invalid email format! Please enter a valid address (e.g. jane@framer.com).'
+        message: '⚠️ Invalid email format! Please enter a valid address (e.g. hello@sofiullahahammad.com).'
       });
     } else if (email && validateEmail(email)) {
       setStatus({
@@ -47,7 +47,7 @@ export default function ContactForm() {
     if (!validateEmail(email)) {
       setStatus({
         type: 'error',
-        message: '⚠️ Invalid email format! Please enter a valid email address (e.g. jane@framer.com).'
+        message: '⚠️ Invalid email format! Please enter a valid email address (e.g. hello@sofiullahahammad.com).'
       });
       return;
     }
@@ -193,7 +193,7 @@ export default function ContactForm() {
             <input
               type="email"
               name="Email"
-              placeholder="jane@framer.com"
+              placeholder="hello@sofiullahahammad.com"
               className="framer-form-input framer-form-input-empty"
               value={email}
               onChange={(e) => {
@@ -231,7 +231,7 @@ export default function ContactForm() {
             <input
               type="tel"
               name="Phone No."
-              placeholder="(347)-000-0000"
+              placeholder="01410190019"
               className="framer-form-input framer-form-input-empty"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}

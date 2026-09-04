@@ -13,8 +13,13 @@ export default function Footer() {
                 </div>
                 <div className="framer-1fea7qo" data-framer-component-type="RichTextContainer">
                   <h4 className="framer-text framer-styles-preset-1qtamek" dir="auto">
-                    <a className="framer-text framer-styles-preset-8g17pg" href="mailto:hi@sofiullah.com" target="_blank" rel="noopener noreferrer">
-                      hi@sofiullah.com
+                    <a className="framer-text framer-styles-preset-8g17pg" href="mailto:hello@sofiullahahammad.com" target="_blank" rel="noopener noreferrer">
+                      hello@sofiullahahammad.com
+                    </a>
+                  </h4>
+                  <h4 className="framer-text framer-styles-preset-1qtamek" dir="auto" style={{ marginTop: '8px' }}>
+                    <a className="framer-text framer-styles-preset-8g17pg" href="tel:01410190019">
+                      📞 01410190019
                     </a>
                   </h4>
                 </div>
