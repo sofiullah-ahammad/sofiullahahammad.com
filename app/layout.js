@@ -2,7 +2,7 @@ import '../styles/framer.css';
 import FramerHydration from '../components/FramerHydration';
 
 export const metadata = {
-  title: 'Magnetto - Stylish Portfolio Template',
+  title: 'Sofiullah Ahammad - Personal Portfolio',
   description: 'A bold, modern portfolio template designed for creatives by FutureThings.',
 };
 

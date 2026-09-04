@@ -25,7 +25,7 @@ export default function Footer() {
                 </div>
                 <div className="framer-knlita" data-framer-component-type="RichTextContainer">
                   <p className="framer-text framer-styles-preset-d8lgz7">
-                    At Magnetto, we break boundaries to craft designs that stand out and deliver results. We blend creativity with strategy, turning bold ideas into digital experiences that captivate and inspire.
+                    At Sofiullah, we break boundaries to craft designs that stand out and deliver results. We blend creativity with strategy, turning bold ideas into digital experiences that captivate and inspire.
                   </p>
                 </div>
                 
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
         <div className="framer-s3n7x7" data-framer-component-type="RichTextContainer">
           <p className="framer-text framer-styles-preset-d8lgz7" style={{ textAlign: 'center' }}>
-            ©2025 MAGNETTO Studio. All right reserved.
+            ©2025 SOFIULLAH Studio. All right reserved.
           </p>
         </div>
       </header>
