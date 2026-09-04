@@ -301,10 +301,10 @@ nav.framer-hyPZS {
   opacity: 0.75 !important;
 }
 
-/* Right White CTA Button */
+/* Right White Header CTA Button */
 .framer-hyPZS .framer-1ub0dek-container,
-.framer-yJAKf.framer-v-5iwahy.framer-mmrlrr,
-.framer-yJAKf.framer-mmrlrr {
+.framer-hyPZS .framer-yJAKf,
+.framer-hyPZS .framer-v-5iwahy {
   background-color: #ffffff !important;
   border-radius: 14px !important;
   height: 38px !important;
@@ -317,13 +317,42 @@ nav.framer-hyPZS {
 }
 
 .framer-hyPZS .framer-1ub0dek-container .framer-text,
-.framer-yJAKf .framer-1iaov7i .framer-text {
+.framer-hyPZS .framer-yJAKf .framer-text {
   font-family: 'Inter', sans-serif !important;
   color: #000000 !important;
   font-size: 13px !important;
   font-weight: 600 !important;
   text-transform: capitalize !important;
   letter-spacing: -0.01em !important;
+}
+
+/* Glassy Pill Buttons on Project Cards (matching exact design from image) */
+.framer-etpqrr-container a,
+.framer-yJAKf.framer-v-mmrlrr,
+.framer-yJAKf.framer-mmrlrr:not(.framer-hyPZS *) {
+  background-color: rgba(20, 20, 20, 0.65) !important;
+  backdrop-filter: blur(32px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(180%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 9999px !important;
+  border-top-left-radius: 9999px !important;
+  border-top-right-radius: 9999px !important;
+  border-bottom-left-radius: 9999px !important;
+  border-bottom-right-radius: 9999px !important;
+  padding: 12px 24px !important;
+  height: auto !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35) !important;
+}
+
+.framer-etpqrr-container .framer-text,
+.framer-yJAKf.framer-v-mmrlrr .framer-text,
+.framer-yJAKf.framer-mmrlrr:not(.framer-hyPZS *) .framer-text,
+.framer-yJAKf.framer-mmrlrr:not(.framer-hyPZS *) p {
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
 }
 
 @media (max-width: 809.98px) {
