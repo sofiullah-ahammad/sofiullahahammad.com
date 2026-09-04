@@ -250,7 +250,7 @@ html body { background: rgb(255, 255, 255); }
 }
 .framer-1stg2t6-container { top: 20px !important; bottom: auto !important; position: fixed !important; left: 50% !important; transform: translateX(-50%) !important; z-index: 9999 !important; }
 
-/* Solid Straight Sharp Corners (0px) for Outer Section Backgrounds & Root Page Containers */
+/* Solid Straight Sharp Corners (0px) for Outer Section Backgrounds & Root Page Containers ONLY */
 html,
 body,
 #main,
@@ -262,17 +262,12 @@ footer,
 .framer-1saqg9t-container,
 .framer-1lldb4o-container,
 .framer-NTpaA,
-.framer-1drj0wv,
-.framer-15oo9ct,
 .framer-rcdnad,
 .framer-ufxx0n,
 .framer-n85nk4,
 div[data-layout-template="true"],
-div[data-framer-name="Container"],
 div[data-framer-name="Header"],
 div[data-framer-name="Journal Hero"],
-div[data-framer-name="Services"],
-div[data-framer-name="Milestones"],
 div[data-framer-name="Journal"],
 div[data-framer-name="Projects"] {
   border-radius: 0px !important;
@@ -282,6 +277,21 @@ div[data-framer-name="Projects"] {
   border-bottom-right-radius: 0px !important;
 }
 
+/* 4 Rounded Corners (40px Desktop / 24px Mobile) for Clients & Services Section Cards */
+.framer-1drj0wv,
+.framer-1vqfxcs,
+.framer-ost3uh,
+.framer-15oo9ct,
+div[data-framer-name="Services"],
+div[data-framer-name="Milestones"] {
+  border-radius: 40px !important;
+  border-top-left-radius: 40px !important;
+  border-top-right-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+  overflow: hidden !important;
+}
+
 /* 20px Rounded Corners ONLY for Inner Component Cards & Images */
 img,
 [data-framer-background-image-wrapper="true"],
@@ -289,8 +299,6 @@ img,
 .framer-S6TxQ,
 .framer-1pdwzkg,
 .framer-a2kn8j,
-.framer-1vqfxcs,
-.framer-ost3uh,
 .framer-k6l5un-container,
 .framer-1td7hff-container,
 div[data-framer-name="Project Card"],
@@ -441,6 +449,19 @@ footer .framer-di44zm {
   footer .framer-wa7e73 {
     border-top-left-radius: 24px !important;
     border-top-right-radius: 24px !important;
+  }
+
+  .framer-1drj0wv,
+  .framer-1vqfxcs,
+  .framer-ost3uh,
+  .framer-15oo9ct,
+  div[data-framer-name="Services"],
+  div[data-framer-name="Milestones"] {
+    border-radius: 24px !important;
+    border-top-left-radius: 24px !important;
+    border-top-right-radius: 24px !important;
+    border-bottom-left-radius: 24px !important;
+    border-bottom-right-radius: 24px !important;
   }
 }
 
