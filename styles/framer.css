@@ -296,4 +296,26 @@ div[data-framer-name="Projects"],
   --framer-input-border-radius-bottom-right: 24px !important;
 }
 
+/* Reduce GET IN TOUCH section background height & top/bottom padding */
+.framer-ogDKz .framer-n85nk4 {
+  height: 600px !important;
+  min-height: auto !important;
+  padding: 48px 64px !important;
+  gap: 40px !important;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+.framer-ogDKz .framer-1u1mxi0 {
+  gap: 32px !important;
+  padding: 32px 40px !important;
+}
+
+.framer-ogDKz.framer-v-pk2eah .framer-n85nk4,
+.framer-ogDKz.framer-v-3zb66l .framer-n85nk4 {
+  height: auto !important;
+  padding: 36px 16px !important;
+}
+
+
 
