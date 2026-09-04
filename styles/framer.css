@@ -537,21 +537,23 @@ footer .framer-di44zm {
   padding: 0 0 12px !important;
 }
 
-/* Reduce excessive top and bottom empty space in Clients Section & Flush with Hero */
+/* Hero Section: Full Viewport Height (100vh) */
 .framer-1saqg9t-container,
 .framer-muYVQ .framer-1saqg9t-container {
-  height: auto !important;
-  max-height: none !important;
+  height: 100vh !important;
+  max-height: 1080px !important;
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
 }
 
 .framer-NTpaA .framer-ufxx0n,
 .framer-NTpaA {
+  height: 100% !important;
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
 }
 
+/* Clients Section: Flush immediately below 100vh Hero */
 .framer-1v8kwee,
 .framer-muYVQ .framer-1v8kwee,
 section[data-framer-name="clients"] {
