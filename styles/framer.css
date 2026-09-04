@@ -250,10 +250,13 @@ html body { background: rgb(255, 255, 255); }
 }
 .framer-1stg2t6-container { top: 20px !important; bottom: auto !important; position: fixed !important; left: 50% !important; transform: translateX(-50%) !important; z-index: 9999 !important; }
 
-/* Custom Overrides: Completely Straight Sharp Corners (0px) for All Card & Section Containers */
+/* Custom Overrides: Subtle 3pt/4px Slightly Rounded Corners for All Hero Images & Card Containers */
 header,
 section,
 footer,
+img,
+[data-framer-background-image-wrapper="true"],
+[data-framer-background-image-wrapper="true"] img,
 div[data-framer-name="Container"],
 div[data-framer-name="Header"],
 div[data-framer-name="Journal Hero"],
@@ -281,12 +284,13 @@ div[data-framer-name="Dark - Without Hover"],
 .framer-k6l5un-container,
 .framer-1td7hff-container,
 .framer-ufxx0n {
-  border-radius: 0px !important;
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
+  border-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
 }
+
 
 
 /* Rounded Contact Card & Input Fields (Email/Firstname/Lastname/Phone/Submit) */
