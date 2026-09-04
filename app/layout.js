@@ -63,6 +63,9 @@ export const metadata = {
     creator: '@sofiullah69',
     images: ['https://i.postimg.cc/tgvMG8xM/profile-pic.png'],
   },
+  verification: {
+    google: 'Jc-vxQwVPd6kJz549d4gMVZyAy9Oq7oUsj7BvUlgdo0',
+  },
 };
 
 const jsonLdSchema = {
@@ -119,6 +122,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="Jc-vxQwVPd6kJz549d4gMVZyAy9Oq7oUsj7BvUlgdo0" />
         <link href="https://i.postimg.cc/Y9y8TFJr/SA-1.png" rel="icon" type="image/png" />
         <link href="https://i.postimg.cc/Y9y8TFJr/SA-1.png" rel="shortcut icon" />
         <link href="https://i.postimg.cc/Y9y8TFJr/SA-1.png" rel="apple-touch-icon" />
