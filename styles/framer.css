@@ -397,6 +397,30 @@ html {
   pointer-events: none !important;
 }
 
+/* Reduce excessive top and bottom padding in Footer */
+.framer-qqKTu .framer-wa7e73,
+footer .framer-wa7e73 {
+  padding: 24px 44px 32px !important;
+  gap: 24px !important;
+}
+
+.framer-qqKTu .framer-1qjraf,
+footer .framer-1qjraf {
+  padding: 32px 64px 16px !important;
+}
+
+.framer-qqKTu .framer-di44zm,
+footer .framer-di44zm {
+  padding: 0 0 12px !important;
+}
+
+.framer-1c3xyrz-container,
+footer {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+
 
 
 
