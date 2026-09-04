@@ -553,15 +553,16 @@ footer .framer-di44zm {
   padding-bottom: 0px !important;
 }
 
-/* Clients Section: Flush immediately below 100vh Hero */
+/* Clients Section: Outer black background starts flush right below 100vh Hero */
 .framer-1v8kwee,
 .framer-muYVQ .framer-1v8kwee,
 section[data-framer-name="clients"] {
   height: auto !important;
   max-height: none !important;
-  padding-top: 0px !important;
+  padding: 8px !important;
   margin-top: 0px !important;
-  padding-bottom: 8px !important;
+  margin-bottom: 0px !important;
+  background-color: #000 !important;
 }
 
 .framer-1drj0wv,
@@ -570,20 +571,14 @@ section[data-framer-name="clients"] {
   min-height: min-content !important;
   max-height: none !important;
   margin-top: 0px !important;
-  padding: 44px 0 !important;
-  gap: 24px !important;
+  padding: 96px 0 !important;
+  gap: 40px !important;
 }
 
 @media (max-width: 809.98px) {
-  .framer-qqKTu .framer-wa7e73,
-  footer .framer-wa7e73 {
-    border-top-left-radius: 24px !important;
-    border-top-right-radius: 24px !important;
-  }
-
   .framer-1drj0wv,
   .framer-muYVQ .framer-1drj0wv {
-    padding: 32px 0 !important;
+    padding: 64px 0 !important;
   }
 
   .framer-1drj0wv,
