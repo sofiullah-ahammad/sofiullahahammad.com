@@ -250,46 +250,61 @@ html body { background: rgb(255, 255, 255); }
 }
 .framer-1stg2t6-container { top: 20px !important; bottom: auto !important; position: fixed !important; left: 50% !important; transform: translateX(-50%) !important; z-index: 9999 !important; }
 
-/* Custom Overrides: Sleek 20pt/20px Rounded Corners for All Hero Images & Card Containers */
+/* Solid Straight Sharp Corners (0px) for Outer Section Backgrounds & Root Page Containers */
+html,
+body,
+#main,
 header,
 section,
 footer,
-img,
-[data-framer-background-image-wrapper="true"],
-[data-framer-background-image-wrapper="true"] img,
+.framer-CBDtO,
+.framer-lkefcw,
+.framer-1saqg9t-container,
+.framer-1lldb4o-container,
+.framer-NTpaA,
+.framer-1drj0wv,
+.framer-15oo9ct,
+.framer-rcdnad,
+.framer-ufxx0n,
+.framer-n85nk4,
+div[data-layout-template="true"],
 div[data-framer-name="Container"],
 div[data-framer-name="Header"],
 div[data-framer-name="Journal Hero"],
 div[data-framer-name="Services"],
 div[data-framer-name="Milestones"],
 div[data-framer-name="Journal"],
-div[data-framer-name="Projects"],
+div[data-framer-name="Projects"] {
+  border-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+/* 20px Rounded Corners ONLY for Inner Component Cards & Images */
+img,
+[data-framer-background-image-wrapper="true"],
+[data-framer-background-image-wrapper="true"] img,
+.framer-S6TxQ,
+.framer-1pdwzkg,
+.framer-a2kn8j,
+.framer-1vqfxcs,
+.framer-ost3uh,
+.framer-k6l5un-container,
+.framer-1td7hff-container,
 div[data-framer-name="Project Card"],
 div[data-framer-name="Variant 1"],
 div[data-framer-name="Variant 2 - Without Hover"],
 div[data-framer-name="Dark"],
-div[data-framer-name="Dark - Without Hover"],
-.framer-n85nk4,
-.framer-rcdnad,
-.framer-1drj0wv,
-.framer-1vqfxcs,
-.framer-ost3uh,
-.framer-15oo9ct,
-.framer-1780gv1,
-.framer-wa7e73,
-.framer-CBDtO,
-.framer-S6TxQ,
-.framer-1pdwzkg,
-.framer-a2kn8j,
-.framer-k6l5un-container,
-.framer-1td7hff-container,
-.framer-ufxx0n {
+div[data-framer-name="Dark - Without Hover"] {
   border-radius: 20px !important;
   border-top-left-radius: 20px !important;
   border-top-right-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
 }
+
 
 
 
