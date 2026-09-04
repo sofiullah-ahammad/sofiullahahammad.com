@@ -23,6 +23,39 @@ export default function Footer() {
                     At Magnetto, we break boundaries to craft designs that stand out and deliver results. We blend creativity with strategy, turning bold ideas into digital experiences that captivate and inspire.
                   </p>
                 </div>
+                
+                <div style={{ marginTop: '24px', display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'flex-start' }}>
+                  {[
+                    { name: 'Behance', url: 'https://www.behance.net/sofiullahammed' },
+                    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/sofiullah-ahammad/' },
+                    { name: 'Facebook', url: 'https://www.facebook.com/SofiullahAahmmad/' },
+                    { name: 'Instagram', url: 'https://www.instagram.com/sofiullahahammad/' },
+                    { name: 'YouTube', url: 'https://www.youtube.com/@sofiullahahammad' },
+                    { name: 'X (Twitter)', url: 'https://x.com/sofiullah69' },
+                  ].map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        color: '#fff',
+                        textDecoration: 'none',
+                        fontSize: '13px',
+                        fontWeight: '500',
+                        backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                        padding: '8px 16px',
+                        borderRadius: '20px',
+                        border: '1px solid rgba(255, 255, 255, 0.15)',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px'
+                      }}
+                    >
+                      {link.name} ↗
+                    </a>
+                  ))}
+                </div>
               </div>
               <div className="framer-1tpmwv">
                 <div className="framer-1q3znil" data-framer-component-type="RichTextContainer">

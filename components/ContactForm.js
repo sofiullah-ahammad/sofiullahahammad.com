@@ -302,6 +302,43 @@ export default function ContactForm() {
           </div>
         </button>
       </div>
+
+      <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid rgba(255, 255, 255, 0.1)', width: '100%' }}>
+        <p style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
+          Connect with me:
+        </p>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+          {[
+            { name: 'Behance', url: 'https://www.behance.net/sofiullahammed' },
+            { name: 'LinkedIn', url: 'https://www.linkedin.com/in/sofiullah-ahammad/' },
+            { name: 'Facebook', url: 'https://www.facebook.com/SofiullahAahmmad/' },
+            { name: 'Instagram', url: 'https://www.instagram.com/sofiullahahammad/' },
+            { name: 'YouTube', url: 'https://www.youtube.com/@sofiullahahammad' },
+            { name: 'X (Twitter)', url: 'https://x.com/sofiullah69' },
+          ].map((link) => (
+            <a
+              key={link.name}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: '#fff',
+                textDecoration: 'none',
+                fontSize: '12px',
+                backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                padding: '6px 14px',
+                borderRadius: '16px',
+                border: '1px solid rgba(255, 255, 255, 0.15)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px'
+              }}
+            >
+              {link.name} ↗
+            </a>
+          ))}
+        </div>
+      </div>
     </form>
   );
 }
