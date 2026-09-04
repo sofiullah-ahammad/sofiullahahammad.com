@@ -394,17 +394,6 @@ html {
   pointer-events: none !important;
 }
 
-/* Text Visibility Fix for Framer Motion initial SSR state */
-.framer-text span[style*="opacity:0.001"],
-.framer-text span[style*="opacity: 0.001"],
-[data-framer-component-type="RichTextContainer"] span[style*="opacity:0.001"],
-[data-framer-component-type="RichTextContainer"] span[style*="opacity: 0.001"] {
-  opacity: 1 !important;
-  filter: none !important;
-}
-
-
-
 
 
 
