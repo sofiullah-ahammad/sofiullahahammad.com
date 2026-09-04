@@ -394,58 +394,15 @@ html {
   pointer-events: none !important;
 }
 
-/* Enforce exact flex order on Home Page container */
-.framer-muYVQ,
-div[data-framer-root] {
-  display: flex !important;
-  flex-direction: column !important;
-}
-
-/* 1. Hero Section */
-.framer-1saqg9t-container {
-  order: 1 !important;
-}
-
-/* 2. Clients Section */
-.framer-1v8kwee,
-section[data-framer-name="clients"] {
-  order: 2 !important;
-}
-
-/* 3. Services & Metrics Section */
-.framer-14ul4mg,
-section[data-framer-name="Services, Metrics"] {
-  order: 3 !important;
-}
-
-/* 4. Projects Section */
-.framer-10qo8yj,
-section[data-framer-name="Projects"] {
-  order: 4 !important;
-}
-
-/* 5. About us Section */
-.framer-q3hmjr,
-section[data-framer-name="About us"] {
-  order: 5 !important;
-}
-
-/* 6. Contact & Footer */
-.framer-b9d5tv-container,
-.framer-1stg2t6-container,
-.framer-ekoxhi-container,
-.framer-1c3xyrz-container,
-.framer-qqKTu,
-footer {
-  order: 6 !important;
-}
-
-/* Ensure all Framer Motion text spans & elements are 100% visible */
-.framer-text span,
-[data-framer-component-type="RichTextContainer"] span {
+/* Text Visibility Fix for Framer Motion initial SSR state */
+.framer-text span[style*="opacity:0.001"],
+.framer-text span[style*="opacity: 0.001"],
+[data-framer-component-type="RichTextContainer"] span[style*="opacity:0.001"],
+[data-framer-component-type="RichTextContainer"] span[style*="opacity: 0.001"] {
   opacity: 1 !important;
   filter: none !important;
 }
+
 
 
 
