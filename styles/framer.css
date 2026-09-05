@@ -648,6 +648,40 @@ section[data-framer-name="clients"] {
   }
 }
 
+/* Force Hero Text container to display left-and-right (side-by-side) on Tablet & Mobile like PC */
+.framer-NTpaA .framer-1xz8szg,
+.framer-NTpaA.framer-v-uks2qu .framer-1xz8szg,
+.framer-NTpaA.framer-v-1gtykls .framer-1xz8szg {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-flow: row wrap !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  gap: 20px !important;
+  padding: 0 44px 36px !important;
+  width: 100% !important;
+  z-index: 10 !important;
+}
+
+/* Left text stack (Name: Sofiullah / Title: Brand Identity Designer) */
+.framer-NTpaA .framer-yrjw1s,
+.framer-NTpaA.framer-v-uks2qu .framer-yrjw1s,
+.framer-NTpaA.framer-v-1gtykls .framer-yrjw1s {
+  flex: 1 1 240px !important;
+  width: auto !important;
+  text-align: left !important;
+}
+
+/* Right text stack (Short Bio / Description) */
+.framer-NTpaA .framer-1nshnt0,
+.framer-NTpaA.framer-v-uks2qu .framer-1nshnt0,
+.framer-NTpaA.framer-v-1gtykls .framer-1nshnt0 {
+  flex: 1 1 260px !important;
+  width: auto !important;
+  max-width: 440px !important;
+  text-align: left !important;
+}
+
 
 
 
