@@ -583,23 +583,23 @@ footer .framer-di44zm {
   gap: 16px !important;
 }
 
-/* PC / Desktop Hero Section: Dynamic Height matching hero card aspect ratio (No excess gap below hero) */
+/* PC / Desktop Hero Section: Full height hero card, cleanly wrapped */
 .framer-1saqg9t-container,
 .framer-muYVQ .framer-1saqg9t-container {
   height: auto !important;
   min-height: auto !important;
   max-height: none !important;
-  margin-bottom: 0px !important;
-  padding-bottom: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 .framer-NTpaA .framer-ufxx0n,
 .framer-NTpaA {
-  height: auto !important;
-  min-height: auto !important;
-  aspect-ratio: 1919 / 933 !important;
-  margin-bottom: 0px !important;
-  padding-bottom: 0px !important;
+  height: 80vh !important;
+  min-height: 650px !important;
+  max-height: 900px !important;
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 /* === PC Desktop Hero: Full 100% Wide Width across all screen resolutions (no right black gap) === */
@@ -613,8 +613,6 @@ footer .framer-di44zm {
   max-width: 100% !important;
   box-sizing: border-box !important;
 }
-
-
 
 /* PC Desktop: force side-aligned text (left text left, right text right) */
 .framer-NTpaA .framer-1xz8szg {
@@ -656,21 +654,19 @@ footer .framer-di44zm {
   text-align: right !important;
 }
 
-
-
-/* Clients Section: Clean compact vertical spacing */
+/* Clients Section: Clean compact vertical spacing with no double margin */
 .framer-1v8kwee,
 .framer-muYVQ .framer-1v8kwee,
 section[data-framer-name="clients"] {
   height: auto !important;
   max-height: none !important;
   padding: 0px !important;
-  margin-top: 16px !important;
-  margin-bottom: 16px !important;
+  margin: 0px !important;
   background-color: #000 !important;
   border-radius: 32px !important;
   overflow: hidden !important;
 }
+
 
 .framer-1drj0wv,
 .framer-muYVQ .framer-1drj0wv {
