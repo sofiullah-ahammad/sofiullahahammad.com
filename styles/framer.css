@@ -653,6 +653,42 @@ section[data-framer-name="clients"] {
   }
 }
 
+/* Force Desktop Variant across all screen sizes and hide Mobile/Tablet variants */
+.hidden-f2v5jq.hidden-1v3h6ti,
+.hidden-6cmj7n.hidden-1fao0k8,
+.hidden-7v4wrl.hidden-ezadf,
+.hidden-kefzqr.hidden-g6p300,
+.hidden-5y47hk.hidden-10jgwwq,
+.hidden-uugwl5.hidden-rqe984 {
+  display: block !important;
+}
+
+.hidden-1v3h6ti.hidden-72rtr7,
+.hidden-f2v5jq.hidden-72rtr7,
+.hidden-1fao0k8.hidden-ctfw96,
+.hidden-6cmj7n.hidden-ctfw96,
+.hidden-1w7mlkg.hidden-ezadf,
+.hidden-1w7mlkg.hidden-7v4wrl,
+.hidden-g6p300.hidden-vqagjj,
+.hidden-kefzqr.hidden-vqagjj,
+.hidden-1he9iai.hidden-10jgwwq,
+.hidden-1he9iai.hidden-5y47hk,
+.hidden-1yurd57.hidden-rqe984,
+.hidden-1yurd57.hidden-uugwl5 {
+  display: none !important;
+}
+
+/* Ensure Hero section preserves desktop aspect ratio and does not artificially stretch to 100vh on mobile */
+@media (max-width: 809.98px) {
+  .framer-1saqg9t-container,
+  .framer-muYVQ .framer-1saqg9t-container {
+    height: auto !important;
+    aspect-ratio: 1920 / 933 !important;
+    max-height: 933px !important;
+    min-height: 250px !important;
+  }
+}
+
 
 
 
