@@ -578,18 +578,18 @@ footer .framer-di44zm {
   padding: 0 0 12px !important;
 }
 
-/* Hero Section: Natural aspect fit without huge bottom gap */
+/* PC / Desktop Hero Section: Original Full Viewport Height (100vh) */
 .framer-1saqg9t-container,
 .framer-muYVQ .framer-1saqg9t-container {
-  height: auto !important;
-  max-height: none !important;
+  height: 100vh !important;
+  max-height: 1080px !important;
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
 }
 
 .framer-NTpaA .framer-ufxx0n,
 .framer-NTpaA {
-  height: auto !important;
+  height: 100% !important;
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
 }
@@ -621,6 +621,13 @@ section[data-framer-name="clients"] {
 }
 
 @media (max-width: 809.98px) {
+  .framer-1saqg9t-container,
+  .framer-muYVQ .framer-1saqg9t-container {
+    height: auto !important;
+    min-height: 480px !important;
+    max-height: none !important;
+  }
+
   .framer-1v8kwee,
   .framer-muYVQ .framer-1v8kwee,
   .framer-1drj0wv,
