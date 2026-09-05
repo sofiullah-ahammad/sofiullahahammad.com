@@ -648,7 +648,22 @@ section[data-framer-name="clients"] {
   }
 }
 
-/* Force Hero Text container to display left-and-right (side-by-side) on Tablet & Mobile like PC */
+/* Force Black Text Color for ALL Hero Text elements across Desktop, Tablet, and Mobile */
+.framer-1xz8szg,
+.framer-1xz8szg h1,
+.framer-1xz8szg h5,
+.framer-1xz8szg p,
+.framer-1xz8szg span,
+.framer-1xz8szg div,
+.framer-1xz8szg .framer-text {
+  color: #000000 !important;
+  --framer-text-color: #000000 !important;
+  --extracted-gdpscs: #000000 !important;
+  --extracted-1lwpl3i: #000000 !important;
+  --extracted-r6o4lv: #000000 !important;
+}
+
+/* Side-by-side layout for Hero Text with clean spacing away from center image */
 .framer-NTpaA .framer-1xz8szg,
 .framer-NTpaA.framer-v-uks2qu .framer-1xz8szg,
 .framer-NTpaA.framer-v-1gtykls .framer-1xz8szg {
@@ -657,29 +672,55 @@ section[data-framer-name="clients"] {
   flex-flow: row wrap !important;
   justify-content: space-between !important;
   align-items: flex-end !important;
-  gap: 20px !important;
-  padding: 0 44px 36px !important;
+  gap: 16px !important;
+  padding: 0 40px 32px !important;
   width: 100% !important;
   z-index: 10 !important;
 }
 
-/* Left text stack (Name: Sofiullah / Title: Brand Identity Designer) */
+/* Left text stack (Name & Title) - compact font sizes so center image remains clear */
 .framer-NTpaA .framer-yrjw1s,
 .framer-NTpaA.framer-v-uks2qu .framer-yrjw1s,
 .framer-NTpaA.framer-v-1gtykls .framer-yrjw1s {
-  flex: 1 1 240px !important;
-  width: auto !important;
+  flex: 0 1 auto !important;
+  max-width: 280px !important;
   text-align: left !important;
 }
 
-/* Right text stack (Short Bio / Description) */
+/* Right text stack (Short Bio / Description) - compact font sizes & max-width */
 .framer-NTpaA .framer-1nshnt0,
 .framer-NTpaA.framer-v-uks2qu .framer-1nshnt0,
 .framer-NTpaA.framer-v-1gtykls .framer-1nshnt0 {
-  flex: 1 1 260px !important;
-  width: auto !important;
-  max-width: 440px !important;
+  flex: 0 1 auto !important;
+  max-width: 280px !important;
   text-align: left !important;
+}
+
+/* Responsive font scaling on Tablet & Mobile to ensure text sits neatly on sides */
+@media (max-width: 1024px) {
+  .framer-1xz8szg {
+    padding: 0 20px 20px !important;
+  }
+
+  .framer-yrjw1s h1 {
+    font-size: clamp(22px, 3.5vw, 32px) !important;
+    line-height: 1.1em !important;
+  }
+
+  .framer-yrjw1s h5 {
+    font-size: clamp(10px, 1.4vw, 13px) !important;
+    margin-top: 4px !important;
+  }
+
+  .framer-1nshnt0 p {
+    font-size: clamp(10px, 1.3vw, 12px) !important;
+    line-height: 1.3em !important;
+  }
+
+  .framer-yrjw1s,
+  .framer-1nshnt0 {
+    max-width: 190px !important;
+  }
 }
 
 
