@@ -1,0 +1,28 @@
+/* Lock the Hero section's aspect ratio and remove 100vh viewport dependency */
+
+.framer-1saqg9t-container {
+  /* Remove the 100vh constraint that causes the hero to compress/expand vertically */
+  height: auto !important;
+  max-height: none !important;
+  min-height: unset !important;
+  
+  /* Lock the container to the original desktop aspect ratio (1440x816) */
+  aspect-ratio: 1440 / 816 !important;
+  
+  /* Ensure it fills the width and scales height proportionally */
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Ensure the hero section itself respects this proportional container */
+.framer-15u0m3i, .framer-NTpaA {
+  height: 100% !important;
+  min-height: 100% !important;
+  max-height: 100% !important;
+}
+
+/* The root container also shouldn't enforce 100vh */
+.framer-72rtr7, .framer-CBDtO {
+  min-height: unset !important;
+  height: auto !important;
+}

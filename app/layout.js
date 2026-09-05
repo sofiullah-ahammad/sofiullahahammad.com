@@ -1,4 +1,5 @@
 import '../styles/framer.css';
+import './mobile-fixes.css';
 import FramerHydration from '../components/FramerHydration';
 
 export const metadata = {
