@@ -803,20 +803,47 @@ section[data-framer-name="clients"] {
   --extracted-r6o4lv: #000000 !important;
 }
 
-/* --- Hero background image: 1:1 on tablet and mobile --- */
-.framer-NTpaA.framer-v-uks2qu .framer-1xjpnxp-container,
-.framer-NTpaA.framer-v-18d0ymy .framer-1xjpnxp-container,
-.framer-NTpaA.framer-v-sn1tsk .framer-1xjpnxp-container,
-.framer-NTpaA.framer-v-1gtykls .framer-1xjpnxp-container {
-  aspect-ratio: 1 / 1 !important;
-  width: 60% !important;
-  height: auto !important;
+/* --- Hero background image: 1:1 square box on tablet and mobile --- */
+.framer-NTpaA.framer-v-uks2qu,
+.framer-NTpaA.framer-v-18d0ymy,
+.framer-NTpaA.framer-v-sn1tsk,
+.framer-NTpaA.framer-v-1gtykls {
+  background-color: #ffffff !important;
+}
+
+.framer-NTpaA.framer-v-uks2qu div[data-framer-background-image-wrapper="true"],
+.framer-NTpaA.framer-v-18d0ymy div[data-framer-background-image-wrapper="true"],
+.framer-NTpaA.framer-v-sn1tsk div[data-framer-background-image-wrapper="true"],
+.framer-NTpaA.framer-v-1gtykls div[data-framer-background-image-wrapper="true"] {
   position: absolute !important;
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
+  width: min(300px, 45vw) !important;
+  height: min(300px, 45vw) !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
   inset: unset !important;
 }
+
+.framer-NTpaA.framer-v-sn1tsk div[data-framer-background-image-wrapper="true"],
+.framer-NTpaA.framer-v-1gtykls div[data-framer-background-image-wrapper="true"] {
+  width: min(200px, 42vw) !important;
+  height: min(200px, 42vw) !important;
+}
+
+.framer-NTpaA.framer-v-uks2qu div[data-framer-background-image-wrapper="true"] img,
+.framer-NTpaA.framer-v-18d0ymy div[data-framer-background-image-wrapper="true"] img,
+.framer-NTpaA.framer-v-sn1tsk div[data-framer-background-image-wrapper="true"] img,
+.framer-NTpaA.framer-v-1gtykls div[data-framer-background-image-wrapper="true"] img {
+  object-fit: cover !important;
+  object-position: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 24px !important;
+}
+
 
 
 
