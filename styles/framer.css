@@ -578,37 +578,33 @@ footer .framer-di44zm {
   padding: 0 0 12px !important;
 }
 
-/* Hero Section: Full Viewport Height (100vh) */
+/* Hero Section: Natural aspect fit without huge bottom gap */
 .framer-1saqg9t-container,
 .framer-muYVQ .framer-1saqg9t-container {
-  height: 100vh !important;
-  max-height: 1080px !important;
+  height: auto !important;
+  max-height: none !important;
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
 }
 
 .framer-NTpaA .framer-ufxx0n,
 .framer-NTpaA {
-  height: 100% !important;
+  height: auto !important;
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
 }
 
-/* Clients Section: Expanded vertical height with 4 rounded corners (top & bottom) */
+/* Clients Section: Clean compact vertical spacing */
 .framer-1v8kwee,
 .framer-muYVQ .framer-1v8kwee,
 section[data-framer-name="clients"] {
   height: auto !important;
   max-height: none !important;
-  padding: 8px !important;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  padding: 0px !important;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
   background-color: #000 !important;
-  border-radius: 40px !important;
-  border-top-left-radius: 40px !important;
-  border-top-right-radius: 40px !important;
-  border-bottom-left-radius: 40px !important;
-  border-bottom-right-radius: 40px !important;
+  border-radius: 32px !important;
   overflow: hidden !important;
 }
 
@@ -618,13 +614,9 @@ section[data-framer-name="clients"] {
   min-height: min-content !important;
   max-height: none !important;
   margin-top: 0px !important;
-  padding: 130px 0 !important;
-  gap: 48px !important;
-  border-radius: 40px !important;
-  border-top-left-radius: 40px !important;
-  border-top-right-radius: 40px !important;
-  border-bottom-left-radius: 40px !important;
-  border-bottom-right-radius: 40px !important;
+  padding: 40px 16px !important;
+  gap: 24px !important;
+  border-radius: 32px !important;
   overflow: hidden !important;
 }
 
@@ -633,7 +625,7 @@ section[data-framer-name="clients"] {
   .framer-muYVQ .framer-1v8kwee,
   .framer-1drj0wv,
   .framer-muYVQ .framer-1drj0wv {
-    padding: 84px 0 !important;
+    padding: 24px 12px !important;
   }
 
   .framer-1saqg9t-container,
@@ -645,47 +637,7 @@ section[data-framer-name="clients"] {
   .framer-15oo9ct,
   div[data-framer-name="Services"],
   div[data-framer-name="Milestones"] {
-    border-radius: 24px !important;
-    border-top-left-radius: 24px !important;
-    border-top-right-radius: 24px !important;
-    border-bottom-left-radius: 24px !important;
-    border-bottom-right-radius: 24px !important;
-  }
-}
-
-/* Force Desktop Variant across all screen sizes and hide Mobile/Tablet variants */
-.hidden-f2v5jq.hidden-1v3h6ti,
-.hidden-6cmj7n.hidden-1fao0k8,
-.hidden-7v4wrl.hidden-ezadf,
-.hidden-kefzqr.hidden-g6p300,
-.hidden-5y47hk.hidden-10jgwwq,
-.hidden-uugwl5.hidden-rqe984 {
-  display: block !important;
-}
-
-.hidden-1v3h6ti.hidden-72rtr7,
-.hidden-f2v5jq.hidden-72rtr7,
-.hidden-1fao0k8.hidden-ctfw96,
-.hidden-6cmj7n.hidden-ctfw96,
-.hidden-1w7mlkg.hidden-ezadf,
-.hidden-1w7mlkg.hidden-7v4wrl,
-.hidden-g6p300.hidden-vqagjj,
-.hidden-kefzqr.hidden-vqagjj,
-.hidden-1he9iai.hidden-10jgwwq,
-.hidden-1he9iai.hidden-5y47hk,
-.hidden-1yurd57.hidden-rqe984,
-.hidden-1yurd57.hidden-uugwl5 {
-  display: none !important;
-}
-
-/* Ensure Hero section preserves desktop aspect ratio and does not artificially stretch to 100vh on mobile */
-@media (max-width: 809.98px) {
-  .framer-1saqg9t-container,
-  .framer-muYVQ .framer-1saqg9t-container {
-    height: auto !important;
-    aspect-ratio: 1920 / 933 !important;
-    max-height: 933px !important;
-    min-height: 250px !important;
+    border-radius: 20px !important;
   }
 }
 
