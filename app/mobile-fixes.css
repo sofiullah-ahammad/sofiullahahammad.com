@@ -6,8 +6,8 @@
   max-height: none !important;
   min-height: unset !important;
   
-  /* Lock the container to the original desktop aspect ratio (1440x816) */
-  aspect-ratio: 1440 / 816 !important;
+  /* Lock the container to the actual hero image aspect ratio (1919x933) so it fits perfectly without white gaps */
+  aspect-ratio: 1919 / 933 !important;
   
   /* Ensure it fills the width and scales height proportionally */
   width: 100% !important;
