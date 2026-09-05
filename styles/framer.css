@@ -594,11 +594,18 @@ footer .framer-di44zm {
   padding-bottom: 0px !important;
 }
 
-/* === PC Desktop Hero: Fix width and ensure text is visible === */
-.framer-NTpaA.framer-15u0m3i {
+/* === PC Desktop Hero: Full 100% Wide Width across all screen resolutions (no right black gap) === */
+.framer-1saqg9t-container,
+.framer-muYVQ .framer-1saqg9t-container,
+.framer-NTpaA,
+.framer-NTpaA.framer-15u0m3i,
+.framer-NTpaA.framer-v-15u0m3i,
+.framer-NTpaA.framer-v-1t9c97s {
   width: 100% !important;
-  max-width: 1440px !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
+
 
 /* PC Desktop: force side-aligned text (left text left, right text right) */
 .framer-NTpaA .framer-1xz8szg {
@@ -809,6 +816,8 @@ section[data-framer-name="clients"] {
 .framer-NTpaA.framer-v-sn1tsk,
 .framer-NTpaA.framer-v-1gtykls {
   background-color: #ffffff !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .framer-NTpaA.framer-v-uks2qu div[data-framer-background-image-wrapper="true"],
@@ -819,18 +828,19 @@ section[data-framer-name="clients"] {
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  width: min(300px, 45vw) !important;
-  height: min(300px, 45vw) !important;
+  width: min(260px, 38vw) !important;
+  height: min(260px, 38vw) !important;
   aspect-ratio: 1 / 1 !important;
-  border-radius: 24px !important;
+  border-radius: 20px !important;
   overflow: hidden !important;
   inset: unset !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
 }
 
 .framer-NTpaA.framer-v-sn1tsk div[data-framer-background-image-wrapper="true"],
 .framer-NTpaA.framer-v-1gtykls div[data-framer-background-image-wrapper="true"] {
-  width: min(200px, 42vw) !important;
-  height: min(200px, 42vw) !important;
+  width: min(170px, 36vw) !important;
+  height: min(170px, 36vw) !important;
 }
 
 .framer-NTpaA.framer-v-uks2qu div[data-framer-background-image-wrapper="true"] img,
@@ -841,8 +851,9 @@ section[data-framer-name="clients"] {
   object-position: center !important;
   width: 100% !important;
   height: 100% !important;
-  border-radius: 24px !important;
+  border-radius: 20px !important;
 }
+
 
 
 
