@@ -648,14 +648,21 @@ section[data-framer-name="clients"] {
   }
 }
 
-/* Force Black Text Color for ALL Hero Text elements across Desktop, Tablet, and Mobile */
-.framer-1xz8szg,
-.framer-1xz8szg h1,
-.framer-1xz8szg h5,
-.framer-1xz8szg p,
-.framer-1xz8szg span,
-.framer-1xz8szg div,
-.framer-1xz8szg .framer-text {
+/* Force Black Text Color ONLY on Tablet and Mobile Hero Text */
+.framer-v-uks2qu .framer-1xz8szg,
+.framer-v-uks2qu .framer-1xz8szg h1,
+.framer-v-uks2qu .framer-1xz8szg h5,
+.framer-v-uks2qu .framer-1xz8szg p,
+.framer-v-uks2qu .framer-1xz8szg span,
+.framer-v-uks2qu .framer-1xz8szg div,
+.framer-v-uks2qu .framer-1xz8szg .framer-text,
+.framer-v-1gtykls .framer-1xz8szg,
+.framer-v-1gtykls .framer-1xz8szg h1,
+.framer-v-1gtykls .framer-1xz8szg h5,
+.framer-v-1gtykls .framer-1xz8szg p,
+.framer-v-1gtykls .framer-1xz8szg span,
+.framer-v-1gtykls .framer-1xz8szg div,
+.framer-v-1gtykls .framer-1xz8szg .framer-text {
   color: #000000 !important;
   --framer-text-color: #000000 !important;
   --extracted-gdpscs: #000000 !important;
@@ -663,95 +670,83 @@ section[data-framer-name="clients"] {
   --extracted-r6o4lv: #000000 !important;
 }
 
-/* Force Hero Text container to stretch full width with wide side padding to clear center portrait */
-.framer-NTpaA .framer-1xz8szg,
-.framer-NTpaA.framer-v-uks2qu .framer-1xz8szg,
-.framer-NTpaA.framer-v-1gtykls .framer-1xz8szg {
+/* Tablet & Mobile Layout ONLY: Side-by-side layout with clean spacing around portrait image */
+.framer-v-uks2qu .framer-1xz8szg,
+.framer-v-1gtykls .framer-1xz8szg {
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: nowrap !important;
   justify-content: space-between !important;
   align-items: center !important;
-  gap: 32px !important;
-  padding: 0 72px 48px !important;
+  gap: 20px !important;
+  padding: 0 48px 36px !important;
   width: 100% !important;
   z-index: 10 !important;
   box-sizing: border-box !important;
 }
 
-/* Left text stack (Name & Title) - Aligned to far left edge */
-.framer-NTpaA .framer-yrjw1s,
-.framer-NTpaA.framer-v-uks2qu .framer-yrjw1s,
-.framer-NTpaA.framer-v-1gtykls .framer-yrjw1s {
+/* Left text stack (Name & Title) - Left aligned */
+.framer-v-uks2qu .framer-yrjw1s,
+.framer-v-1gtykls .framer-yrjw1s {
   flex: 0 0 auto !important;
-  max-width: 280px !important;
+  max-width: 240px !important;
   text-align: left !important;
   align-items: flex-start !important;
 }
 
-/* Right text stack (Short Bio / Description) - Aligned to far right edge */
-.framer-NTpaA .framer-1nshnt0,
-.framer-NTpaA.framer-v-uks2qu .framer-1nshnt0,
-.framer-NTpaA.framer-v-1gtykls .framer-1nshnt0 {
+.framer-v-uks2qu .framer-yrjw1s *,
+.framer-v-1gtykls .framer-yrjw1s * {
+  text-align: left !important;
+}
+
+/* Right text stack (Short Bio / Description) - Right aligned */
+.framer-v-uks2qu .framer-1nshnt0,
+.framer-v-1gtykls .framer-1nshnt0 {
   flex: 0 0 auto !important;
-  max-width: 260px !important;
+  max-width: 240px !important;
   text-align: right !important;
   align-items: flex-end !important;
   margin-left: auto !important;
 }
 
-.framer-NTpaA .framer-1nshnt0 p,
-.framer-NTpaA.framer-v-uks2qu .framer-1nshnt0 p,
-.framer-NTpaA.framer-v-1gtykls .framer-1nshnt0 p {
+.framer-v-uks2qu .framer-1nshnt0 *,
+.framer-v-1gtykls .framer-1nshnt0 * {
   text-align: right !important;
 }
 
-/* Responsive font scaling on Tablet & Mobile to ensure text sits neatly on outer sides */
-@media (max-width: 1024px) {
-  .framer-NTpaA .framer-1xz8szg,
-  .framer-NTpaA.framer-v-uks2qu .framer-1xz8szg,
-  .framer-NTpaA.framer-v-1gtykls .framer-1xz8szg {
-    padding: 0 48px 36px !important;
-    gap: 20px !important;
+/* Responsive adjustments for narrow screen / Mobile */
+@media (max-width: 640px) {
+  .framer-v-uks2qu .framer-1xz8szg,
+  .framer-v-1gtykls .framer-1xz8szg {
+    padding: 0 20px 24px !important;
+    gap: 12px !important;
   }
 
-  .framer-yrjw1s {
-    max-width: 220px !important;
+  .framer-v-uks2qu .framer-yrjw1s,
+  .framer-v-1gtykls .framer-yrjw1s,
+  .framer-v-uks2qu .framer-1nshnt0,
+  .framer-v-1gtykls .framer-1nshnt0 {
+    max-width: 160px !important;
   }
 
-  .framer-1nshnt0 {
-    max-width: 220px !important;
-  }
-
-  .framer-yrjw1s h1 {
-    font-size: clamp(20px, 3.2vw, 30px) !important;
+  .framer-v-uks2qu .framer-yrjw1s h1,
+  .framer-v-1gtykls .framer-yrjw1s h1 {
+    font-size: 20px !important;
     line-height: 1.1em !important;
   }
 
-  .framer-yrjw1s h5 {
-    font-size: clamp(10px, 1.3vw, 13px) !important;
-    margin-top: 4px !important;
+  .framer-v-uks2qu .framer-yrjw1s h5,
+  .framer-v-1gtykls .framer-yrjw1s h5 {
+    font-size: 11px !important;
   }
 
-  .framer-1nshnt0 p {
-    font-size: clamp(10px, 1.2vw, 12px) !important;
+  .framer-v-uks2qu .framer-1nshnt0 p,
+  .framer-v-1gtykls .framer-1nshnt0 p {
+    font-size: 11px !important;
     line-height: 1.3em !important;
-    text-align: right !important;
   }
 }
 
-@media (max-width: 640px) {
-  .framer-NTpaA .framer-1xz8szg,
-  .framer-NTpaA.framer-v-uks2qu .framer-1xz8szg,
-  .framer-NTpaA.framer-v-1gtykls .framer-1xz8szg {
-    padding: 0 24px 24px !important;
-  }
-
-  .framer-yrjw1s,
-  .framer-1nshnt0 {
-    max-width: 160px !important;
-  }
-}
 
 
 
