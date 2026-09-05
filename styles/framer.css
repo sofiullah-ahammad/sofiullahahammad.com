@@ -594,6 +594,54 @@ footer .framer-di44zm {
   padding-bottom: 0px !important;
 }
 
+/* === PC Desktop Hero: Fix width and ensure text is visible === */
+.framer-NTpaA.framer-15u0m3i {
+  width: 100% !important;
+  max-width: 1440px !important;
+}
+
+/* PC Desktop: force side-aligned text (left text left, right text right) */
+.framer-NTpaA .framer-1xz8szg {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 88px !important;
+  width: 100% !important;
+  overflow: visible !important;
+  z-index: 1 !important;
+}
+
+.framer-NTpaA .framer-yrjw1s {
+  flex: 0 1 auto !important;
+  min-width: 200px !important;
+  max-width: 350px !important;
+  text-align: left !important;
+  align-items: flex-start !important;
+  overflow: visible !important;
+}
+
+.framer-NTpaA .framer-1nshnt0 {
+  flex: 0 1 auto !important;
+  min-width: 200px !important;
+  max-width: 350px !important;
+  text-align: right !important;
+  align-items: flex-end !important;
+  justify-content: flex-end !important;
+  overflow: visible !important;
+}
+
+.framer-NTpaA .framer-yrjw1s * {
+  text-align: left !important;
+}
+
+.framer-NTpaA .framer-1nshnt0 * {
+  text-align: right !important;
+}
+
+
+
 /* Clients Section: Clean compact vertical spacing */
 .framer-1v8kwee,
 .framer-muYVQ .framer-1v8kwee,
