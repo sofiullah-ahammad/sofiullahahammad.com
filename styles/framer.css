@@ -858,11 +858,11 @@ section[data-framer-name="clients"] {
   border-radius: inherit !important;
 }
 
-/* All Section Header Bars (Projects, Journal, Clients, Services): Title on Left, Subtitle on Right */
+/* Section Header Bars (Projects, Clients): Title on Left, Subtitle on Right */
+section[data-framer-name="Projects"] .framer-6t99gb,
+section[data-framer-name="clients"] .framer-2yushz,
 .framer-2yushz,
-.framer-6t99gb,
-.framer-muYVQ .framer-2yushz,
-.framer-muYVQ .framer-6t99gb {
+.framer-6t99gb {
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: nowrap !important;
@@ -870,6 +870,10 @@ section[data-framer-name="clients"] {
   align-items: center !important;
   width: 100% !important;
   box-sizing: border-box !important;
+}
+
+section[data-framer-name="Projects"] .framer-6t99gb {
+  margin-bottom: 28px !important;
 }
 
 /* Left Title Stack */
