@@ -662,25 +662,15 @@ footer .framer-di44zm {
   text-align: right !important;
 }
 
-/* All Main Section Cards (Clients, Services, Milestones): Uniform zero margins so parent gap controls spacing */
-.framer-1v8kwee,
-.framer-muYVQ .framer-1v8kwee,
-section[data-framer-name="clients"],
-.framer-14ul4mg,
-section[data-framer-name="Services, Metrics"],
-.framer-173pog4,
-div[data-framer-name="Services"],
-div[data-framer-name="Milestones"] {
-  height: auto !important;
-  max-height: none !important;
-  margin: 0px !important;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-}
-
+/* Clients Section: Subtle 1pt-style gap below hero card */
 .framer-1v8kwee,
 .framer-muYVQ .framer-1v8kwee,
 section[data-framer-name="clients"] {
+  height: auto !important;
+  max-height: none !important;
+  margin-top: 8px !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
   background-color: #000 !important;
   border-radius: 32px !important;
   overflow: hidden !important;
@@ -695,6 +685,27 @@ section[data-framer-name="clients"] {
   padding: 40px 16px !important;
   gap: 24px !important;
   border-radius: 32px !important;
+  overflow: hidden !important;
+}
+
+/* Services & Milestones Sections: Restored Boxed Card Container Layout */
+.framer-14ul4mg,
+section[data-framer-name="Services, Metrics"],
+.framer-1vqfxcs,
+div[data-framer-name="Services"],
+.framer-ost3uh,
+.framer-15oo9ct,
+div[data-framer-name="Milestones"] {
+  height: auto !important;
+  max-height: none !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  background-color: #000000 !important;
+  border-radius: 40px !important;
+  border-top-left-radius: 40px !important;
+  border-top-right-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
   overflow: hidden !important;
 }
 
@@ -725,6 +736,7 @@ section[data-framer-name="clients"] {
     border-radius: 20px !important;
   }
 }
+
 
 
 
