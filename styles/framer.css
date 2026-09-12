@@ -688,27 +688,6 @@ section[data-framer-name="clients"] {
   overflow: hidden !important;
 }
 
-/* Services & Milestones Sections: Restored Boxed Card Container Layout */
-.framer-14ul4mg,
-section[data-framer-name="Services, Metrics"],
-.framer-1vqfxcs,
-div[data-framer-name="Services"],
-.framer-ost3uh,
-.framer-15oo9ct,
-div[data-framer-name="Milestones"] {
-  height: auto !important;
-  max-height: none !important;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-  background-color: #000000 !important;
-  border-radius: 40px !important;
-  border-top-left-radius: 40px !important;
-  border-top-right-radius: 40px !important;
-  border-bottom-left-radius: 40px !important;
-  border-bottom-right-radius: 40px !important;
-  overflow: hidden !important;
-}
-
 @media (max-width: 809.98px) {
   .framer-1saqg9t-container,
   .framer-muYVQ .framer-1saqg9t-container {
@@ -727,15 +706,11 @@ div[data-framer-name="Milestones"] {
   .framer-1saqg9t-container,
   .framer-NTpaA,
   .framer-ufxx0n,
-  .framer-1drj0wv,
-  .framer-1vqfxcs,
-  .framer-ost3uh,
-  .framer-15oo9ct,
-  div[data-framer-name="Services"],
-  div[data-framer-name="Milestones"] {
+  .framer-1drj0wv {
     border-radius: 20px !important;
   }
 }
+
 
 
 
