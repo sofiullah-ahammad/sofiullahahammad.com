@@ -578,16 +578,24 @@ footer .framer-di44zm {
   padding: 0 0 12px !important;
 }
 
-/* Uniform 16px Gap Across All Page Sections */
+/* Uniform Gap Across All Page Sections (Desktop & Mobile) */
 .framer-muYVQ .framer-10qo8yj {
   gap: 16px !important;
+  padding: 16px !important;
 }
 
-/* PC / Desktop Hero Section: Full height hero card, cleanly wrapped */
+@media (max-width: 809.98px) {
+  .framer-muYVQ .framer-10qo8yj {
+    gap: 12px !important;
+    padding: 12px !important;
+  }
+}
+
+/* PC / Desktop Hero Section: Full Size Hero Card with NO black bar above or below */
 .framer-1saqg9t-container,
 .framer-muYVQ .framer-1saqg9t-container {
   height: auto !important;
-  min-height: auto !important;
+  min-height: min-content !important;
   max-height: none !important;
   margin: 0px !important;
   padding: 0px !important;
@@ -595,9 +603,9 @@ footer .framer-di44zm {
 
 .framer-NTpaA .framer-ufxx0n,
 .framer-NTpaA {
-  height: 80vh !important;
-  min-height: 650px !important;
-  max-height: 900px !important;
+  height: 100% !important;
+  min-height: 80vh !important;
+  max-height: 1080px !important;
   margin: 0px !important;
   padding: 0px !important;
 }
@@ -654,26 +662,36 @@ footer .framer-di44zm {
   text-align: right !important;
 }
 
-/* Clients Section: Clean compact vertical spacing with no double margin */
+/* All Main Section Cards (Clients, Services, Milestones): Uniform zero margins so parent gap controls spacing */
+.framer-1v8kwee,
+.framer-muYVQ .framer-1v8kwee,
+section[data-framer-name="clients"],
+.framer-14ul4mg,
+section[data-framer-name="Services, Metrics"],
+.framer-173pog4,
+div[data-framer-name="Services"],
+div[data-framer-name="Milestones"] {
+  height: auto !important;
+  max-height: none !important;
+  margin: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
 .framer-1v8kwee,
 .framer-muYVQ .framer-1v8kwee,
 section[data-framer-name="clients"] {
-  height: auto !important;
-  max-height: none !important;
-  padding: 0px !important;
-  margin: 0px !important;
   background-color: #000 !important;
   border-radius: 32px !important;
   overflow: hidden !important;
 }
-
 
 .framer-1drj0wv,
 .framer-muYVQ .framer-1drj0wv {
   height: auto !important;
   min-height: min-content !important;
   max-height: none !important;
-  margin-top: 0px !important;
+  margin: 0px !important;
   padding: 40px 16px !important;
   gap: 24px !important;
   border-radius: 32px !important;
@@ -684,7 +702,7 @@ section[data-framer-name="clients"] {
   .framer-1saqg9t-container,
   .framer-muYVQ .framer-1saqg9t-container {
     height: auto !important;
-    min-height: 480px !important;
+    min-height: min-content !important;
     max-height: none !important;
   }
 
@@ -707,6 +725,7 @@ section[data-framer-name="clients"] {
     border-radius: 20px !important;
   }
 }
+
 
 
 /* ===== HERO SECTION OVERRIDES ===== */
