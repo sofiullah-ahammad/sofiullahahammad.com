@@ -858,6 +858,67 @@ section[data-framer-name="clients"] {
   border-radius: inherit !important;
 }
 
+/* All Section Header Bars (Projects, Journal, Clients, Services): Title on Left, Subtitle on Right */
+.framer-2yushz,
+.framer-6t99gb,
+.framer-muYVQ .framer-2yushz,
+.framer-muYVQ .framer-6t99gb {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Left Title Stack */
+.framer-2yushz .framer-1yo7a47,
+.framer-6t99gb .framer-1yo7a47,
+.framer-2yushz .framer-brsl2u,
+.framer-6t99gb .framer-brsl2u {
+  flex: 0 1 auto !important;
+  text-align: left !important;
+  align-items: flex-start !important;
+}
+
+.framer-2yushz .framer-1yo7a47 *,
+.framer-6t99gb .framer-1yo7a47 *,
+.framer-2yushz .framer-brsl2u *,
+.framer-6t99gb .framer-brsl2u * {
+  text-align: left !important;
+}
+
+/* Right Subtitle / Description Stack */
+.framer-2yushz .framer-1iqs4gg,
+.framer-6t99gb .framer-1iqs4gg,
+.framer-2yushz .framer-mes0xo,
+.framer-6t99gb .framer-mes0xo {
+  flex: 0 1 auto !important;
+  max-width: 440px !important;
+  text-align: right !important;
+  align-items: flex-end !important;
+  justify-content: flex-end !important;
+  margin-left: auto !important;
+}
+
+.framer-2yushz .framer-1iqs4gg *,
+.framer-6t99gb .framer-1iqs4gg *,
+.framer-2yushz .framer-mes0xo *,
+.framer-6t99gb .framer-mes0xo * {
+  text-align: right !important;
+}
+
+@media (max-width: 640px) {
+  .framer-2yushz .framer-1iqs4gg,
+  .framer-6t99gb .framer-1iqs4gg,
+  .framer-2yushz .framer-mes0xo,
+  .framer-6t99gb .framer-mes0xo {
+    max-width: 220px !important;
+  }
+}
+
+
 
 
 
