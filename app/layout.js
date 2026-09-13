@@ -130,9 +130,34 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content="https://i.postimg.cc/tgvMG8xM/profile-pic.png" />
         <meta name="twitter:image" content="https://i.postimg.cc/tgvMG8xM/profile-pic.png" />
         <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                if (typeof window === 'undefined') return;
+                var origMM = window.matchMedia;
+                window.matchMedia = function(q) {
+                  if (typeof q === 'string') {
+                    if (q.indexOf('max-width') !== -1 || q.indexOf('809') !== -1 || q.indexOf('1439') !== -1) {
+                      return { matches: false, media: q, onchange: null, addListener: function(){}, removeListener: function(){}, addEventListener: function(){}, removeEventListener: function(){}, dispatchEvent: function(){ return false; } };
+                    }
+                    if (q.indexOf('min-width') !== -1 || q.indexOf('1440') !== -1) {
+                      return { matches: true, media: q, onchange: null, addListener: function(){}, removeListener: function(){}, addEventListener: function(){}, removeEventListener: function(){}, dispatchEvent: function(){ return false; } };
+                    }
+                  }
+                  if (origMM) {
+                    try { return origMM.call(window, q); } catch(e) {}
+                  }
+                  return { matches: false, media: q, onchange: null, addListener: function(){}, removeListener: function(){}, addEventListener: function(){}, removeEventListener: function(){}, dispatchEvent: function(){ return false; } };
+                };
+              })();
+            `
+          }}
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
         />
+
       </head>
       <body>
         <ViewportScaler>
