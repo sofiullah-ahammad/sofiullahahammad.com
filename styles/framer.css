@@ -659,7 +659,7 @@ footer .framer-di44zm {
 }
 
 .framer-NTpaA .framer-1nshnt0 * {
-  text-align: right !important;
+  text-align: left !important;
 }
 
 /* Clients Section: Subtle 1pt-style gap below hero card */
@@ -709,153 +709,6 @@ section[data-framer-name="clients"] {
   .framer-1drj0wv {
     border-radius: 20px !important;
   }
-}
-
-
-
-
-
-/* ===== HERO SECTION OVERRIDES ===== */
-
-/* PC (Desktop) - original framer layout is already row/side-aligned, NO changes needed */
-
-/* --- TABLET & MOBILE: Match PC row layout (left text left, right text right) --- */
-
-/* Override framer's column layout on tablet and mobile */
-.framer-NTpaA.framer-v-uks2qu .framer-1xz8szg,
-.framer-NTpaA.framer-v-18d0ymy .framer-1xz8szg,
-.framer-NTpaA.framer-v-sn1tsk .framer-1xz8szg,
-.framer-NTpaA.framer-v-1gtykls .framer-1xz8szg {
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  gap: 0px !important;
-  padding: 0 48px 40px !important;
-  width: 100% !important;
-  height: min-content !important;
-  box-sizing: border-box !important;
-}
-
-/* Mobile padding (smaller screen) */
-.framer-NTpaA.framer-v-sn1tsk .framer-1xz8szg,
-.framer-NTpaA.framer-v-1gtykls .framer-1xz8szg {
-  padding: 0 20px 32px !important;
-}
-
-/* Left text stack (Name & Title) — left aligned, take up left ~35% */
-.framer-NTpaA.framer-v-uks2qu .framer-yrjw1s,
-.framer-NTpaA.framer-v-18d0ymy .framer-yrjw1s,
-.framer-NTpaA.framer-v-sn1tsk .framer-yrjw1s,
-.framer-NTpaA.framer-v-1gtykls .framer-yrjw1s {
-  flex: 0 0 auto !important;
-  width: auto !important;
-  max-width: 220px !important;
-  text-align: left !important;
-  align-items: flex-start !important;
-  align-self: center !important;
-}
-
-.framer-NTpaA.framer-v-uks2qu .framer-yrjw1s *,
-.framer-NTpaA.framer-v-18d0ymy .framer-yrjw1s *,
-.framer-NTpaA.framer-v-sn1tsk .framer-yrjw1s *,
-.framer-NTpaA.framer-v-1gtykls .framer-yrjw1s * {
-  text-align: left !important;
-}
-
-/* Right text stack (Bio/Description) — right aligned, take up right ~35% */
-.framer-NTpaA.framer-v-uks2qu .framer-1nshnt0,
-.framer-NTpaA.framer-v-18d0ymy .framer-1nshnt0,
-.framer-NTpaA.framer-v-sn1tsk .framer-1nshnt0,
-.framer-NTpaA.framer-v-1gtykls .framer-1nshnt0 {
-  flex: 0 0 auto !important;
-  width: auto !important;
-  max-width: 220px !important;
-  text-align: right !important;
-  align-items: flex-end !important;
-  align-self: center !important;
-  justify-content: flex-end !important;
-  margin-left: auto !important;
-}
-
-.framer-NTpaA.framer-v-uks2qu .framer-1nshnt0 *,
-.framer-NTpaA.framer-v-18d0ymy .framer-1nshnt0 *,
-.framer-NTpaA.framer-v-sn1tsk .framer-1nshnt0 *,
-.framer-NTpaA.framer-v-1gtykls .framer-1nshnt0 * {
-  text-align: right !important;
-}
-
-/* Mobile smaller max-width */
-.framer-NTpaA.framer-v-sn1tsk .framer-yrjw1s,
-.framer-NTpaA.framer-v-1gtykls .framer-yrjw1s,
-.framer-NTpaA.framer-v-sn1tsk .framer-1nshnt0,
-.framer-NTpaA.framer-v-1gtykls .framer-1nshnt0 {
-  max-width: 140px !important;
-}
-
-/* --- Text color black on tablet and mobile --- */
-.framer-NTpaA.framer-v-uks2qu .framer-1xz8szg,
-.framer-NTpaA.framer-v-uks2qu .framer-1xz8szg h1,
-.framer-NTpaA.framer-v-uks2qu .framer-1xz8szg h5,
-.framer-NTpaA.framer-v-uks2qu .framer-1xz8szg p,
-.framer-NTpaA.framer-v-uks2qu .framer-1xz8szg span,
-.framer-NTpaA.framer-v-18d0ymy .framer-1xz8szg,
-.framer-NTpaA.framer-v-18d0ymy .framer-1xz8szg h1,
-.framer-NTpaA.framer-v-18d0ymy .framer-1xz8szg h5,
-.framer-NTpaA.framer-v-18d0ymy .framer-1xz8szg p,
-.framer-NTpaA.framer-v-18d0ymy .framer-1xz8szg span,
-.framer-NTpaA.framer-v-sn1tsk .framer-1xz8szg,
-.framer-NTpaA.framer-v-sn1tsk .framer-1xz8szg h1,
-.framer-NTpaA.framer-v-sn1tsk .framer-1xz8szg h5,
-.framer-NTpaA.framer-v-sn1tsk .framer-1xz8szg p,
-.framer-NTpaA.framer-v-sn1tsk .framer-1xz8szg span,
-.framer-NTpaA.framer-v-1gtykls .framer-1xz8szg,
-.framer-NTpaA.framer-v-1gtykls .framer-1xz8szg h1,
-.framer-NTpaA.framer-v-1gtykls .framer-1xz8szg h5,
-.framer-NTpaA.framer-v-1gtykls .framer-1xz8szg p,
-.framer-NTpaA.framer-v-1gtykls .framer-1xz8szg span {
-  color: #000000 !important;
-  --framer-text-color: #000000 !important;
-  --extracted-gdpscs: #000000 !important;
-  --extracted-1lwpl3i: #000000 !important;
-  --extracted-r6o4lv: #000000 !important;
-}
-
-/* --- Hero background image: 1:1 square container box filling 100% on tablet and mobile --- */
-.framer-NTpaA.framer-v-uks2qu,
-.framer-NTpaA.framer-v-18d0ymy,
-.framer-NTpaA.framer-v-sn1tsk,
-.framer-NTpaA.framer-v-1gtykls {
-  aspect-ratio: 1 / 1 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-.framer-NTpaA.framer-v-uks2qu div[data-framer-background-image-wrapper="true"],
-.framer-NTpaA.framer-v-18d0ymy div[data-framer-background-image-wrapper="true"],
-.framer-NTpaA.framer-v-sn1tsk div[data-framer-background-image-wrapper="true"],
-.framer-NTpaA.framer-v-1gtykls div[data-framer-background-image-wrapper="true"] {
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  transform: none !important;
-  border-radius: inherit !important;
-  overflow: hidden !important;
-}
-
-.framer-NTpaA.framer-v-uks2qu div[data-framer-background-image-wrapper="true"] img,
-.framer-NTpaA.framer-v-18d0ymy div[data-framer-background-image-wrapper="true"] img,
-.framer-NTpaA.framer-v-sn1tsk div[data-framer-background-image-wrapper="true"] img,
-.framer-NTpaA.framer-v-1gtykls div[data-framer-background-image-wrapper="true"] img {
-  object-fit: cover !important;
-  object-position: center !important;
-  width: 100% !important;
-  height: 100% !important;
-  border-radius: inherit !important;
 }
 
 /* ==========================================================================
@@ -946,7 +799,7 @@ section[data-framer-name="clients"] {
   opacity: 1 !important;
 }
 
-/* Force hero text spans and headings to be visible (override initial inline opacity: 0.001) */
+/* Force hero text spans and headings to be visible */
 .framer-NTpaA .framer-1xz8szg,
 .framer-NTpaA .framer-yrjw1s,
 .framer-NTpaA .framer-text,
@@ -955,6 +808,47 @@ section[data-framer-name="clients"] {
   visibility: visible !important;
   filter: none !important;
 }
+
+/* 5. Clients & Hero Section Top Alignment & Text Left Alignment Fix */
+.framer-1v8kwee .framer-2yushz,
+section[data-framer-name="clients"] .framer-2yushz {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  align-self: flex-start !important;
+}
+
+.framer-1v8kwee .framer-1iqs4gg,
+.framer-1v8kwee .framer-mes0xo,
+section[data-framer-name="clients"] .framer-1iqs4gg,
+section[data-framer-name="clients"] .framer-mes0xo {
+  align-self: flex-start !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  text-align: left !important;
+}
+
+.framer-1v8kwee .framer-mes0xo *,
+section[data-framer-name="clients"] p {
+  text-align: left !important;
+}
+
+.framer-NTpaA .framer-1xz8szg {
+  align-items: flex-start !important;
+}
+
+.framer-NTpaA .framer-1nshnt0 {
+  align-self: flex-start !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  text-align: left !important;
+}
+
+.framer-NTpaA .framer-1nshnt0 * {
+  text-align: left !important;
+}
+
 
 
 
