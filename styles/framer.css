@@ -647,71 +647,10 @@ footer .framer-di44zm {
 .framer-NTpaA .framer-1nshnt0 {
   flex: 0 1 auto !important;
   min-width: 200px !important;
-  max-width: 350px !important;
-  text-align: right !important;
-  align-items: flex-end !important;
-  justify-content: flex-end !important;
-  overflow: visible !important;
-}
-
-.framer-NTpaA .framer-yrjw1s * {
-  text-align: left !important;
-}
-
-.framer-NTpaA .framer-1nshnt0 * {
-  text-align: left !important;
-}
-
-/* Clients Section: Subtle 1pt-style gap below hero card */
-.framer-1v8kwee,
-.framer-muYVQ .framer-1v8kwee,
-section[data-framer-name="clients"] {
-  height: auto !important;
-  max-height: none !important;
-  margin-top: 8px !important;
-  margin-bottom: 0px !important;
-  padding: 0px !important;
-  background-color: #000 !important;
-  border-radius: 32px !important;
-  overflow: hidden !important;
-}
-
-.framer-1drj0wv,
-.framer-muYVQ .framer-1drj0wv {
-  height: auto !important;
-  min-height: min-content !important;
-  max-height: none !important;
-  margin: 0px !important;
-  padding: 40px 16px !important;
-  gap: 24px !important;
-  border-radius: 32px !important;
-  overflow: hidden !important;
-}
-
-@media (max-width: 809.98px) {
-  .framer-1saqg9t-container,
-  .framer-muYVQ .framer-1saqg9t-container {
-    height: auto !important;
-    min-height: min-content !important;
-    max-height: none !important;
-  }
-
-  .framer-1v8kwee,
-  .framer-muYVQ .framer-1v8kwee,
-  .framer-1drj0wv,
-  .framer-muYVQ .framer-1drj0wv {
-    padding: 24px 12px !important;
-  }
-
-  .framer-1saqg9t-container,
-  .framer-NTpaA,
-  .framer-ufxx0n,
-  .framer-1drj0wv {
-    border-radius: 20px !important;
-  }
 }
 
 /* ==========================================================================
+
    MASTER DESKTOP CANVAS 1440px FIXED SCALING ARCHITECTURE
    Enforces single 1440px desktop design master across all viewports.
    ========================================================================== */
@@ -752,54 +691,7 @@ section[data-framer-name="clients"] {
   opacity: 0 !important;
 }
 
-/* 3. Hero Section Aspect Ratio & Container Lock */
-.framer-1saqg9t-container {
-  height: auto !important;
-  max-height: none !important;
-  min-height: unset !important;
-  aspect-ratio: 1919 / 933 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  position: relative !important;
-}
-
-.framer-15u0m3i, .framer-NTpaA {
-  height: 100% !important;
-  min-height: 100% !important;
-  max-height: 100% !important;
-  padding: 0 !important;
-}
-
-/* 4. Desktop Hero Background Image & Text Visibility Guarantee */
-.framer-NTpaA,
-.framer-NTpaA .framer-ufxx0n {
-  width: 100% !important;
-  height: 100% !important;
-  position: relative !important;
-}
-
-.framer-NTpaA div[data-framer-background-image-wrapper="true"] {
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  z-index: 0 !important;
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-.framer-NTpaA div[data-framer-background-image-wrapper="true"] img {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* Force hero text spans and headings to be visible */
+/* Force hero initial inline opacity: 0.001 text spans to be visible */
 .framer-NTpaA .framer-1xz8szg,
 .framer-NTpaA .framer-yrjw1s,
 .framer-NTpaA .framer-text,
@@ -809,45 +701,6 @@ section[data-framer-name="clients"] {
   filter: none !important;
 }
 
-/* 5. Clients & Hero Section Top Alignment & Text Left Alignment Fix */
-.framer-1v8kwee .framer-2yushz,
-section[data-framer-name="clients"] .framer-2yushz {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
-  align-items: flex-start !important;
-  align-self: flex-start !important;
-}
-
-.framer-1v8kwee .framer-1iqs4gg,
-.framer-1v8kwee .framer-mes0xo,
-section[data-framer-name="clients"] .framer-1iqs4gg,
-section[data-framer-name="clients"] .framer-mes0xo {
-  align-self: flex-start !important;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  text-align: left !important;
-}
-
-.framer-1v8kwee .framer-mes0xo *,
-section[data-framer-name="clients"] p {
-  text-align: left !important;
-}
-
-.framer-NTpaA .framer-1xz8szg {
-  align-items: flex-start !important;
-}
-
-.framer-NTpaA .framer-1nshnt0 {
-  align-self: flex-start !important;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  text-align: left !important;
-}
-
-.framer-NTpaA .framer-1nshnt0 * {
-  text-align: left !important;
-}
 
 
 
