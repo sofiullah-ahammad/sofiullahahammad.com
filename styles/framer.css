@@ -858,68 +858,45 @@ section[data-framer-name="clients"] {
   border-radius: inherit !important;
 }
 
-/* Section Header Bars (Projects, Clients): Title on Left, Subtitle on Right */
-section[data-framer-name="Projects"] .framer-6t99gb,
-section[data-framer-name="clients"] .framer-2yushz,
-.framer-2yushz,
-.framer-6t99gb {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  width: 100% !important;
+/* ==========================================================================
+   MASTER DESKTOP CANVAS 1440px FIXED SCALING ARCHITECTURE
+   Enforces single 1440px desktop design master across all viewports.
+   ========================================================================== */
+
+/* 1. Master Canvas Fixed Width */
+#master-desktop-canvas {
+  width: 1440px !important;
+  min-width: 1440px !important;
+  max-width: 1440px !important;
   box-sizing: border-box !important;
 }
 
-section[data-framer-name="Projects"] .framer-6t99gb {
-  margin-bottom: 28px !important;
+/* 2. SSR Variant Visibilities: Force Desktop visible, hide Tablet/Phone */
+.ssr-variant.hidden-f2v5jq.hidden-1v3h6ti,
+.ssr-variant.hidden-6cmj7n.hidden-1fao0k8,
+[data-framer-name="Desktop"],
+[data-framer-name="Desktop-light"],
+.framer-v-15u0m3i {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
-/* Left Title Stack */
-.framer-2yushz .framer-1yo7a47,
-.framer-6t99gb .framer-1yo7a47,
-.framer-2yushz .framer-brsl2u,
-.framer-6t99gb .framer-brsl2u {
-  flex: 0 1 auto !important;
-  text-align: left !important;
-  align-items: flex-start !important;
-}
-
-.framer-2yushz .framer-1yo7a47 *,
-.framer-6t99gb .framer-1yo7a47 *,
-.framer-2yushz .framer-brsl2u *,
-.framer-6t99gb .framer-brsl2u * {
-  text-align: left !important;
-}
-
-/* Right Subtitle / Description Stack */
-.framer-2yushz .framer-1iqs4gg,
-.framer-6t99gb .framer-1iqs4gg,
-.framer-2yushz .framer-mes0xo,
-.framer-6t99gb .framer-mes0xo {
-  flex: 0 1 auto !important;
-  max-width: 440px !important;
-  text-align: right !important;
-  align-items: flex-end !important;
-  justify-content: flex-end !important;
-  margin-left: auto !important;
-}
-
-.framer-2yushz .framer-1iqs4gg *,
-.framer-6t99gb .framer-1iqs4gg *,
-.framer-2yushz .framer-mes0xo *,
-.framer-6t99gb .framer-mes0xo * {
-  text-align: right !important;
-}
-
-@media (max-width: 640px) {
-  .framer-2yushz .framer-1iqs4gg,
-  .framer-6t99gb .framer-1iqs4gg,
-  .framer-2yushz .framer-mes0xo,
-  .framer-6t99gb .framer-mes0xo {
-    max-width: 220px !important;
-  }
+.ssr-variant.hidden-1v3h6ti.hidden-72rtr7,
+.ssr-variant.hidden-f2v5jq.hidden-72rtr7,
+.ssr-variant.hidden-1fao0k8.hidden-ctfw96,
+.ssr-variant.hidden-6cmj7n.hidden-ctfw96,
+[data-framer-name="Tablet-Light"],
+[data-framer-name="Tablet"],
+[data-framer-name="Phone-light"],
+[data-framer-name="Phone"],
+.framer-v-uks2qu,
+.framer-v-18d0ymy,
+.framer-v-sn1tsk,
+.framer-v-1gtykls {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 

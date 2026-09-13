@@ -1,6 +1,6 @@
 import '../styles/framer.css';
-import './mobile-fixes.css';
 import FramerHydration from '../components/FramerHydration';
+import ViewportScaler from '../components/ViewportScaler';
 
 export const metadata = {
   metadataBase: new URL('https://sofiullahahammad.com'),
@@ -122,7 +122,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-redirect-timezone="1">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="google-site-verification" content="Jc-vxQwVPd6kJz549d4gMVZyAy9Oq7oUsj7BvUlgdo0" />
         <link href="https://i.postimg.cc/Y9y8TFJr/SA-1.png" rel="icon" type="image/png" />
         <link href="https://i.postimg.cc/Y9y8TFJr/SA-1.png" rel="shortcut icon" />
@@ -135,9 +135,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        {children}
+        <ViewportScaler>
+          {children}
+        </ViewportScaler>
         <FramerHydration />
       </body>
     </html>
   );
 }
+
