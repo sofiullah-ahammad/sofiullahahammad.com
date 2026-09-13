@@ -899,6 +899,25 @@ section[data-framer-name="clients"] {
   opacity: 0 !important;
 }
 
+/* 3. Hero Section Aspect Ratio & Container Lock */
+.framer-1saqg9t-container {
+  height: auto !important;
+  max-height: none !important;
+  min-height: unset !important;
+  aspect-ratio: 1919 / 933 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  position: relative !important;
+}
+
+.framer-15u0m3i, .framer-NTpaA {
+  height: 100% !important;
+  min-height: 100% !important;
+  max-height: 100% !important;
+  padding: 0 !important;
+}
+
+
 
 
 
